@@ -13,9 +13,9 @@
         <meta property="og:url" content=""/>
         <meta property="og:site_name" content="CMS | Echttech" />
         <link rel="canonical" href=""/>
-        <link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.ico') }}"/>
-        <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css"/>
-        <link href="{{ asset('assets/cms_css/style.bundle.css') }}" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="{{ asset('assets-cms/media/logos/favicon.ico') }}"/>
+        <link href="{{ asset('assets-cms/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('assets-cms/cms_css/style.bundle.css') }}" rel="stylesheet" type="text/css"/>
         <script>
             // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking)
             if (window.top != window.self) {
@@ -48,10 +48,10 @@
 	<div class="d-flex flex-column flex-root">
     <style>
     body {
-    background-image: url('{{ asset("assets/media/auth/bg10.jpg") }}');
+    background-image: url('{{ asset("assets-cms/media/auth/bg10.jpg") }}');
     }
     [data-bs-theme="dark"] body {
-    background-image: url('{{ asset("assets/media/auth/bg10-dark.jpg") }}');
+    background-image: url('{{ asset("assets-cms/media/auth/bg10-dark.jpg") }}');
     }
     </style>
 <div class="d-flex flex-column flex-column-fluid flex-lg-row">
@@ -134,8 +134,8 @@
     </div>
 </div>
 </div>
-    <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
-    <script src="{{ asset('assets/cms_js/scripts.bundle.js') }}"></script>
-    <script src="{{ asset('assets/cms_js/custom/authentication/reset-password/new-password.js') }}"></script>
+    <script src="{{ asset('assets-cms/plugins/global/plugins.bundle.js') }}"></script>
+    <script src="{{ asset('assets-cms/cms_js/scripts.bundle.js') }}"></script>
+    <script src="{{ asset('assets-cms/cms_js/custom/authentication/reset-password/new-password.js') }}"></script>
     </body>
 </html>

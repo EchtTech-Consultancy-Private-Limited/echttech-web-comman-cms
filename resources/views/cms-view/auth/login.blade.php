@@ -13,10 +13,10 @@
       <meta property="og:url" content=""/>
       <meta property="og:site_name" content="CMS | Login" />
       <link rel="canonical" href=""/>
-      <link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.ico') }}"/>
-      <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css"/>
-      <link href="{{ asset('assets/cms_css/style.bundle.css') }}" rel="stylesheet" type="text/css"/>
-      <link href="{{ asset('assets/cms_css/cms-css.css') }}" rel="stylesheet" type="text/css"/>
+      <link rel="shortcut icon" href="{{ asset('assets-cms/media/logos/favicon.ico') }}"/>
+      <link href="{{ asset('assets-cms/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css"/>
+      <link href="{{ asset('assets-cms/cms_css/style.bundle.css') }}" rel="stylesheet" type="text/css"/>
+      <link href="{{ asset('assets-cms/cms_css/cms-css.css') }}" rel="stylesheet" type="text/css"/>
    <style>
       </style>
    </head>
@@ -24,10 +24,10 @@
       <div class="d-flex flex-column flex-root">
          <style>
             body {
-            background-image: url('{{ asset("assets/media/auth/bg10.jpg") }}');
+            background-image: url('{{ asset("assets-cms/media/auth/bg10.jpg") }}');
             }
             [data-bs-theme="dark"] body {
-            background-image: url('{{ asset("assets/media/auth/bg10-dark.jpg") }}');
+            background-image: url('{{ asset("assets-cms/media/auth/bg10-dark.jpg") }}');
             }
          </style>
          <div class="d-flex flex-column flex-lg-row flex-column-fluid">
@@ -94,13 +94,13 @@
             </div>
          </div>
       </div>
-      <script src="{{ asset('assets/cms_js/jquery_3.7.1_jquery.min.js') }}"></script>
-      <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
-      <script src="{{ asset('assets/cms_js/scripts.bundle.js') }}"></script>
-      <script src="{{ asset('assets/plugins/custom/prismjs/prismjs.bundle.js') }}"></script>
-      <script src="{{ asset('assets/cms_js/crypto-js_3.1.2_rollups_aes.js') }}"></script>
-      <script src="{{ asset('assets/cms_js/src_md5.js') }}"></script>
+      <script src="{{ asset('assets-cms/cms_js/jquery_3.7.1_jquery.min.js') }}"></script>
+      <script src="{{ asset('assets-cms/plugins/global/plugins.bundle.js') }}"></script>
+      <script src="{{ asset('assets-cms/cms_js/scripts.bundle.js') }}"></script>
+      <script src="{{ asset('assets-cms/plugins/custom/prismjs/prismjs.bundle.js') }}"></script>
+      <script src="{{ asset('assets-cms/cms_js/crypto-js_3.1.2_rollups_aes.js') }}"></script>
+      <script src="{{ asset('assets-cms/cms_js/src_md5.js') }}"></script>
       <script src="{{ asset('public/authentication/sign-in/general.js') }}"></script>
-      <script src="{{ asset('assets/cms_js/cms-js.js') }}"></script>
+      <script src="{{ asset('assets-cms/cms_js/cms-js.js') }}"></script>
    </body>
 </html>

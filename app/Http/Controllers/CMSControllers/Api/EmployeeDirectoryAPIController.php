@@ -57,15 +57,20 @@ class EmployeeDirectoryAPIController extends Controller
      */
     public function store(Request $request)
     {
-        // $exitValue = EmployeeDirectory::where('mobile', $request->mobileno)->count() > 0;
-        // // $max_size = $document->getMaxFileSize() / 1024 / 1024;
-        //  if($exitValue == 'false'){
-        //      DB::rollback();
-        //      $notification =[
-        //          'status'=>201,
-        //          'message'=>'Mobile or Email is duplicate value.'
-        //      ];
-        //  }else{
+        
+        if(config('checkduplicate.mobile') == 'ON'){
+            $exitValue = EmployeeDirectory::where('mobile', $request->mobileno)->count() > 0;
+        }else{
+            $exitValue ='true';
+        }
+        // $max_size = $document->getMaxFileSize() / 1024 / 1024;
+         if($exitValue == 'false'){
+             DB::rollback();
+             $notification =[
+                 'status'=>201,
+                 'message'=>'Mobile or Email is duplicate value.'
+             ];
+         }else{
              try{
                  $validator=Validator::make($request->all(),
                      [
@@ -137,7 +142,7 @@ class EmployeeDirectoryAPIController extends Controller
                  report($e);
                  return false;
              }
-         //}
+         }
          return response()->json($notification);
     }
 

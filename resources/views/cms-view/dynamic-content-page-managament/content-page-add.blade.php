@@ -614,7 +614,7 @@
    <!--end::Card body-->
    @else
       {!! $textMessage !!}
-     <div class="symbol symbol-100px text-center"> <img class="" src='{{ asset("assets/media/auth/404-error.png") }}' /></div>
+     <div class="symbol symbol-100px text-center"> <img class="" src='{{ asset("assets-cms/media/auth/404-error.png") }}' /></div>
    @endif
 </div>
 

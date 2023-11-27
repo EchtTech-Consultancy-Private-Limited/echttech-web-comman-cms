@@ -10,7 +10,7 @@
 {{ __('Error-401') }}
 @endsection
 @section('content')
-<div class="error error-5 d-flex flex-row-fluid bgi-size-cover bgi-position-center" style="background-image: url({{ asset('assets/media/error/bg3.jpg') }});">
+<div class="error error-5 d-flex flex-row-fluid bgi-size-cover bgi-position-center" style="background-image: url({{ asset('assets-cms/media/error/bg3.jpg') }});">
     <!--begin::Content-->
     <div class="container d-flex flex-row-fluid flex-column justify-content-md-center p-12">
         <h1 class="error-title font-weight-boldest text-info mt-10 mt-md-0 mb-12">401 | UNAUTHORIZED</h1>
