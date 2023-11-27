@@ -50,7 +50,7 @@
                 <!--begin::Button-->
                 <a href="{{ route('role.create') }}" class="btn btn-clear d-flex flex-column flex-center">
                     <!--begin::Illustration-->
-                    <img src="{{ asset('assets/media/illustrations/unitedpalms-1/4.png') }}" alt="" class="mw-100 mh-150px mb-7"/>                      
+                    <img src="{{ asset('assets-cms/media/illustrations/unitedpalms-1/4.png') }}" alt="" class="mw-100 mh-150px mb-7"/>                      
                     <!--end::Illustration-->
 
                     <!--begin::Label-->

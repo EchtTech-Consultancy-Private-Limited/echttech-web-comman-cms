@@ -24,6 +24,8 @@
                 <tr role="row">
                     <th class="sorting" tabindex="0" aria-controls="kt_datatable_employee_directory" rowspan="1" colspan="1">{{__('ID')}}</th>
                     <th class="sorting" tabindex="0" aria-controls="kt_datatable_employee_directory" rowspan="1" colspan="1">{{__('Name')}}</th>
+                    <th class="sorting" tabindex="0" aria-controls="kt_datatable_employee_directory" rowspan="1" colspan="1">{{__('Email')}}</th>
+                    <th class="sorting" tabindex="0" aria-controls="kt_datatable_employee_directory" rowspan="1" colspan="1">{{__('Profile')}}</th>
                     <th class="sorting" tabindex="0" aria-controls="kt_datatable_employee_directory" rowspan="1" colspan="1">{{__('Status')}}</th>
                     <th class="sorting" tabindex="0" aria-controls="kt_datatable_employee_directory" rowspan="1" colspan="1">{{__('Action')}}</th>
                 </tr>

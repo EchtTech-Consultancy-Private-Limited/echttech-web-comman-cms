@@ -79,6 +79,7 @@ class LoginController extends Controller
 
     public function authenticate(Request $request)
     {
+      
       if(Session::get('capcode') != $request->captcha){
         return response()->json(['message' => "Captcha Invalid!.",'status'=>401],401);
       }
@@ -94,7 +95,11 @@ class LoginController extends Controller
         if($ExitMail == false){
           return response()->json(['message' => "Check Your Login Credential.",'status'=>401],401);
         }else{
-        $check = DB::table('users')->where('email',$request->email)->first()->login_status == '0';
+          if(config('checkduplicate.CHECK_LOGIN_USER_LOGGEDIN') == 'ON'){
+            $check = DB::table('users')->where('email',$request->email)->first()->login_status == '0';
+          }else{
+            $check ='true';
+          }
         if($check == false){
           return response()->json(['message' => "Another Person login!",'status'=>401],401);
         }else{

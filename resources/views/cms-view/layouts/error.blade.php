@@ -20,7 +20,7 @@
                <div class="aside-logo flex-column-auto" id="kt_aside_logo">
                   <!--begin::Logo-->
                   <a href="{{ route('dashboard') }}">
-                  <img alt="Logo" src="{{ asset('assets/logo-light.png') }}" class="h-35px logo"/>
+                  <img alt="Logo" src="{{ asset('assets-cms/logo-light.png') }}" class="h-35px logo"/>
                   </a>
                   <!--end::Logo-->
                   <div id="kt_aside_toggle" class="btn btn-icon w-auto px-0 btn-active-color-primary aside-toggle me-n2" 

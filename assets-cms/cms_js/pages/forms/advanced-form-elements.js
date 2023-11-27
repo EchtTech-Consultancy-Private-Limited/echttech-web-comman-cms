@@ -186,9 +186,9 @@ function initImageSelect() {
   /* select with image */
   $("#imgsel").formSelect();
   var data = [
-    { id: 1, name: "Option 1", url: "../../assets/images/user/user1.jpg" },
-    { id: 2, name: "Option 2", url: "../../assets/images/user/user2.jpg" },
-    { id: 3, name: "Option 3", url: "../../assets/images/user/user3.jpg" },
+    { id: 1, name: "Option 1", url: "../../assets-cms/images/user/user1.jpg" },
+    { id: 2, name: "Option 2", url: "../../assets-cms/images/user/user2.jpg" },
+    { id: 3, name: "Option 3", url: "../../assets-cms/images/user/user3.jpg" },
   ];
 
   var Options = "";

@@ -771,11 +771,11 @@ function setRtlLayout() {
   var page = path.split("https://www.einfosoft.com/").pop();
   if (page === "index.html") {
     $("head").prepend(
-      '<link rel="stylesheet" href="assets/js/bundles/materialize-rtl/materialize-rtl.min.css" type="text/css" id="material-rtl"/>'
+      '<link rel="stylesheet" href="assets-cms/js/bundles/materialize-rtl/materialize-rtl.min.css" type="text/css" id="material-rtl"/>'
     );
   } else {
     $("head").prepend(
-      '<link rel="stylesheet" href="../../assets/js/bundles/materialize-rtl/materialize-rtl.min.css" type="text/css" id="material-rtl"/>'
+      '<link rel="stylesheet" href="../../assets-cms/js/bundles/materialize-rtl/materialize-rtl.min.css" type="text/css" id="material-rtl"/>'
     );
   }
   localStorage.setItem("layout", "rtl");

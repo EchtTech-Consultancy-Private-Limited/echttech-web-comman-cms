@@ -16,12 +16,12 @@
 <meta property="og:url" content=""/>
 <meta property="og:site_name" content="ECHTTECH | CRM" />
 <link rel="shortcut icon" href="{{ asset(config('constants.default.favicon')) }}"/>
-<link href="{{ asset('assets/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ asset('assets/plugins/custom/prismjs/prismjs.bundle.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ asset('assets/cms_css/summernote-bs4.min.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ asset('assets/cms_css/cms-css.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ asset('assets/cms_css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('assets-cms/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('assets-cms/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('assets-cms/plugins/custom/prismjs/prismjs.bundle.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('assets-cms/cms_css/summernote-bs4.min.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('assets-cms/cms_css/cms-css.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('assets-cms/cms_css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
 
 <script>
     if (window.top != window.self) {

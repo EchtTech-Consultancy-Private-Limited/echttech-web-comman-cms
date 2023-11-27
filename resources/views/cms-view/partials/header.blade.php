@@ -14,7 +14,7 @@
                      <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
                         <a href="{{ route('dashboard') }}" class="d-lg-none">
                         @if(isset(Auth::user()->role_id) == '1' && Auth::user()->role_id == '1')
-                           <img alt="Logo" src="{{ asset('assets/logo-light.png') }}" class="h-25px"/>
+                           <img alt="Logo" src="{{ asset('assets-cms/logo-light.png') }}" class="h-25px"/>
                         @else
                         <p>{{ env('COMPANY_NAME') }}</p>
                         @endif
@@ -144,7 +144,7 @@
                               <!--begin::Menu-->
                               <div class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px" data-kt-menu="true" id="kt_menu_notifications">
                                  <!--begin::Heading-->
-                                 <div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('{{ asset('assets') }}/media/misc/menu-header-bg.jpg')">
+                                 <div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('{{ asset('assets-cms') }}/media/misc/menu-header-bg.jpg')">
                                     <!--begin::Title-->                                   
                                     <h3 class="text-white fw-semibold px-9 mt-10 mb-6">
                                        Notifications <span class="fs-8 opacity-75 ps-3">24 reports</span>
@@ -305,7 +305,7 @@
                                                 <!--end::Symbol-->
                                                 <!--begin::Title-->
                                                 <div class="mb-0 me-2">
-                                                   <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Banner {{ asset('assets') }}</a>
+                                                   <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Banner {{ asset('assets-cms') }}</a>
                                                    <div class="text-gray-400 fs-7">Collection of banner images</div>
                                                 </div>
                                                 <!--end::Title-->
@@ -329,7 +329,7 @@
                                                 <!--end::Symbol-->
                                                 <!--begin::Title-->
                                                 <div class="mb-0 me-2">
-                                                   <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Icon {{ asset('assets') }}</a>
+                                                   <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bold">Icon {{ asset('assets-cms') }}</a>
                                                    <div class="text-gray-400 fs-7">Collection of SVG icons</div>
                                                 </div>
                                                 <!--end::Title-->
@@ -376,7 +376,7 @@
                                           <!--end::Section-->
                                           <!--begin::Illustration-->
                                           <div class="text-center px-4">
-                                             <img class="mw-100 mh-200px" alt="image" src="{{ asset('assets') }}/media/illustrations/unitedpalms-1/1.png"/>
+                                             <img class="mw-100 mh-200px" alt="image" src="{{ asset('assets-cms') }}/media/illustrations/unitedpalms-1/1.png"/>
                                           </div>
                                           <!--end::Illustration-->
                                        </div>
@@ -409,7 +409,7 @@
                               <!--begin::Menu-->
                               <div class="menu menu-sub menu-sub-dropdown menu-column w-250px w-lg-325px" data-kt-menu="true">
                                  <!--begin::Heading-->
-                                 <div class="d-flex flex-column flex-center bgi-no-repeat rounded-top px-9 py-10" style="background-image:url('{{ asset('assets') }}/media/misc/menu-header-bg.jpg')">
+                                 <div class="d-flex flex-column flex-center bgi-no-repeat rounded-top px-9 py-10" style="background-image:url('{{ asset('assets-cms') }}/media/misc/menu-header-bg.jpg')">
                                     <!--begin::Title-->
                                     <h3 class="text-white fw-semibold mb-3">
                                        Quick Links 
@@ -533,7 +533,7 @@
                                           @if(isset(Auth::user()->avatar) && Auth::user()->avatar)
                                           <img alt="Logo" src="{{ asset('resources/uploads/userImage/').'/'.Auth::user()->avatar??'' }}"/>
                                           @else
-                                          <img alt="Logo" src="{{ asset('assets/media/avatars/300-1.jpg') }}"/>
+                                          <img alt="Logo" src="{{ asset('assets-cms/media/avatars/300-1.jpg') }}"/>
                                           @endif
                                        </div>
                                        <!--end::Avatar-->

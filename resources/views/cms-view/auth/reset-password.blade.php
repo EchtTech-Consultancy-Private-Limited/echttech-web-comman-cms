@@ -12,19 +12,19 @@
       <meta property="og:url" content=""/>
       <meta property="og:site_name" content="CMS | Login" />
       <link rel="canonical" href=""/>
-      <link rel="shortcut icon" href="{{ asset('assets/media/logos/favicon.ico') }}"/>
+      <link rel="shortcut icon" href="{{ asset('assets-cms/media/logos/favicon.ico') }}"/>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"/>
-      <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css"/>
-      <link href="{{ asset('assets/cms_css/style.bundle.css') }}" rel="stylesheet" type="text/css"/>
+      <link href="{{ asset('assets-cms/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css"/>
+      <link href="{{ asset('assets-cms/cms_css/style.bundle.css') }}" rel="stylesheet" type="text/css"/>
    </head>
    <body  id="kt_body"  class="auth-bg bgi-size-cover bgi-attachment-fixed bgi-position-center" >
       <div class="d-flex flex-column flex-root">
          <style>
             body {
-            background-image: url('{{ asset("assets/media/auth/bg10.jpg") }}');
+            background-image: url('{{ asset("assets-cms/media/auth/bg10.jpg") }}');
             }
             [data-bs-theme="dark"] body {
-            background-image: url('{{ asset("assets/media/auth/bg10-dark.jpg") }}');
+            background-image: url('{{ asset("assets-cms/media/auth/bg10-dark.jpg") }}');
             }
          </style>
          <div class="d-flex flex-column flex-lg-row flex-column-fluid">
@@ -75,7 +75,7 @@
                      <!-- <div class=" d-flex flex-stack">
                         <div class="me-10">
                            <button class="btn btn-flex btn-link btn-color-gray-700 btn-active-color-primary rotate fs-base" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start" data-kt-menu-offset="0px, 0px">
-                           <img  data-kt-element="current-lang-flag" class="w-20px h-20px rounded me-3" src="{{ asset('assets/media/flags/india.svg') }}" alt=""/>
+                           <img  data-kt-element="current-lang-flag" class="w-20px h-20px rounded me-3" src="{{ asset('assets-cms/media/flags/india.svg') }}" alt=""/>
                            <span data-kt-element="current-lang-name" class="me-1">English</span>
                            <i class="ki-outline ki-down fs-5 text-muted rotate-180 m-0"></i>                        
                            </button>
@@ -83,7 +83,7 @@
                               <div class="menu-item px-3">
                                  <a href="#" class="menu-link d-flex px-5" data-kt-lang="English">
                                  <span class="symbol symbol-20px me-4">
-                                 <img data-kt-element="lang-flag" class="rounded-1" src="{{ asset('assets/media/flags/india.svg') }}" alt=""/>
+                                 <img data-kt-element="lang-flag" class="rounded-1" src="{{ asset('assets-cms/media/flags/india.svg') }}" alt=""/>
                                  </span>
                                  <span data-kt-element="lang-name">English</span>
                                  </a>
@@ -97,8 +97,8 @@
             </div>
          </div>
       </div>
-      <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
-      <script src="{{ asset('assets/cms_js/scripts.bundle.js') }}"></script>
-      <script src="{{ asset('assets/cms_js/custom/authentication/reset-password/reset-password.js') }}"></script>
+      <script src="{{ asset('assets-cms/plugins/global/plugins.bundle.js') }}"></script>
+      <script src="{{ asset('assets-cms/cms_js/scripts.bundle.js') }}"></script>
+      <script src="{{ asset('assets-cms/cms_js/custom/authentication/reset-password/reset-password.js') }}"></script>
    </body>
 </html>
