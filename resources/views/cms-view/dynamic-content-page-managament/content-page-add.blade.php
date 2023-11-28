@@ -515,7 +515,7 @@
          <!--begin:::Tab pane-->
          <div class="tab-pane fade" id="kt_settings_pageBanner" role="tabpanel">
             <!--begin::Form-->
-            <form id="kt_page_pdf_form" class="form">
+            <form id="kt_page_banner_form" class="form">
                <!--begin::Input group-->
                <div class="card card-flush py-4">
                   <div class="card-body pt-0">
@@ -543,16 +543,16 @@
                         <!--begin::Input group-->
                         <div class="" data-kt-ecommerce-catalog-add-product="auto-options">
                            <!--begin::Repeater-->
-                           <div id="kt_PagePdf_add_multiple_options">
+                           <div id="">
                               <!--begin::Form group-->
                               <div class="form-group">
                                  <label class="required form-label mw-100 w-200px">Banner Title</label>
                                  <label class="required form-label mw-100 w-200px" style="margin-left: 13px;">Banner image Format</label>
-                                 <div data-repeater-list="kt_PagePdf_add_multiple_options" class="d-flex flex-column gap-3">
+                                 <div class="d-flex flex-column gap-3">
                                     <div data-repeater-item class="form-group d-flex flex-wrap align-items-center gap-5">
                                        <!--begin::Input-->
-                                       <input type="text" class="form-control mw-100 w-200px" name="pdftitle" placeholder="Banner title Name" />
-                                       <input type="file" class="form-control mw-100 w-200px checkmimepdf" name="image" accept="image/*" />
+                                       <input type="text" class="form-control mw-100 w-200px" name="bannertitle" placeholder="Banner title Name" />
+                                       <input type="file" class="form-control mw-100 w-200px" name="image" accept="image/*" />
                                        <!--end::Input-->
                                        <!-- <button type="button"id="removeRow" data-repeater-delete class="btn btn-sm btn-icon btn-light-danger">
                                           <i class="ki-outline ki-cross fs-1"></i>
@@ -591,7 +591,7 @@
                         </button>
                         <!--end::Button-->
                         <!--begin::Button-->
-                        <button type="submit" id="kt_add_pagepdf_submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary submit-pdfpage-btn">
+                        <button type="submit" id="kt_add_pagebanner_submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary submit-bannerpage-btn">
                         <span class="indicator-label">
                         Save
                         </span>

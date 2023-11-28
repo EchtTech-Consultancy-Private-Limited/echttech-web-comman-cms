@@ -159,7 +159,7 @@ var KTDatatablesBasicPaginations = function() {
 									if (history.scrollRestoration) {
 									   history.scrollRestoration = 'manual';
 									}
-									location.href = 'menu-list'; // reload page
+									location.href = 'audittrail-list'; // reload page
 								 }, 1500);
 
 							})

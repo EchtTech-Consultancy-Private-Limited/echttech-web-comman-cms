@@ -46,7 +46,7 @@ var KTAppBasicInformationSave = function () {
                    $('#loading-content').addClass('loading-content');
                 axios.post(crudUrlTemplate.create_pagemetatag,new FormData(form), {
                    }).then(function (response) {
-                   if (response) {
+                   if (response.data.status ==200) {
                      $('#loading').removeClass('loading');
                      $('#loading-content').removeClass('loading-content');
                       toastr.success(
@@ -147,7 +147,7 @@ var KTAppBasicInformationSave = function () {
                          kt_summernote_en: $('#kt_summernote_en').summernote('code'),
                          kt_summernote_hi: $('#kt_summernote_hi').summernote('code')
                    }).then(function (response) {
-                   if (response) {
+                   if (response.data.status ==200) {
                      $('#loading').removeClass('loading');
                      $('#loading-content').removeClass('loading-content');
                       toastr.success(
@@ -363,7 +363,7 @@ var KTAppBasicInformationSave = function () {
                 axios.post(crudUrlTemplate.create_pagepdf,new FormData(form),{
                          
                    }).then(function (response) {
-                   if (response) {
+                   if (response.data.status ==200) {
                      $('#loading').removeClass('loading');
                      $('#loading-content').removeClass('loading-content');
                       toastr.success(
@@ -433,10 +433,102 @@ var KTAppBasicInformationSave = function () {
          }
      };
  }();
+ var KTAppPageBannerSave = function () {
+   var _officeAdd4;
+    var jsonURL = $('#urlListData').attr('data-info');
+    var crudUrlTemplate = JSON.parse(jsonURL);
+    var _handleOfficeAddForm4 = function(e) {
+    var validation;
+    var form = document.getElementById('kt_page_banner_form');
+       // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
+       validation = FormValidation.formValidation(
+             form,
+             {
+                fields: {
+                   pageTitle_id3: {
+                         validators: {
+                            notEmpty: {
+                               message: 'This field is required'
+                            },
+                         },
+                   },
+                },
+                plugins: {
+                   trigger: new FormValidation.plugins.Trigger(),
+                   bootstrap: new FormValidation.plugins.Bootstrap5()
+                }
+             }
+       );
+ $('.submit-bannerpage-btn').click( function(e) {
+             e.preventDefault();
+             validation.validate().then(function(status) {
+                if (status == 'Valid') {
+                   submitButton.setAttribute('data-kt-indicator', 'on');
+                   submitButton.disabled = true;
+                   //$('#examAddModal').modal('hide');
+                   $('#loading').addClass('loading');
+                   $('#loading-content').addClass('loading-content');
+                axios.post(crudUrlTemplate.create_pagebanner,new FormData(form),{
+                         
+                   }).then(function (response) {
+                   if (response.data.status ==200) {
+                     $('#loading').removeClass('loading');
+                     $('#loading-content').removeClass('loading-content');
+                      toastr.success(
+                         "New Page Banner added successfully!", 
+                         "New Page Banner!", 
+                         {timeOut: 0, extendedTimeOut: 0, closeButton: true, closeDuration: 0}
+                      );
+                      setTimeout(function() {
+                         if (history.scrollRestoration) {
+                             history.scrollRestoration = 'manual';
+                         }
+                      // location.href = 'contentpage-create'; // reload page
+                      }, 1500);
+                      
+                   } else {
+                      toastr.error(
+                         "Sorry, the information is incorrect, please try again.", 
+                         "Something went wrong!", 
+                         {timeOut: 0, extendedTimeOut: 0, closeButton: true, closeDuration: 0}
+                      );
+                      }
+                   })
+                   .catch(function (error) {
+                         toastr.error(
+                            "Sorry, looks like there are some errors detected, please try again B.", 
+                            "Something went wrong!", 
+                            {timeOut: 0, extendedTimeOut: 0, closeButton: true, closeDuration: 0}
+                         );
+                      }).then(() => {
+                            // Hide loading indication
+                            submitButton.removeAttribute('data-kt-indicator');
+                            // Enable button
+                            submitButton.disabled = false;
+                      });
+                   } else {
+                         toastr.error(
+                               "Sorry, looks like there are some errors detected, please try again K.", 
+                               "Something went wrong!", 
+                               {timeOut: 0, extendedTimeOut: 0, closeButton: true, closeDuration: 0}
+                            );
+                      }
+                })
+             });
+       }
+ return {
+         init: function () {
+             _officeAdd4 = $('#kt_page_banner_form');
+             _handleOfficeAddForm4();
+             submitButton = document.querySelector('#kt_add_pagebanner_submit');
+         }
+     };
+ }();
  // On document ready
  jQuery(document).ready(function() {
     KTAppBasicInformationSave.init();
     KTAppcontentpageSave.init();
     KTAppPageGallerySave.init();
     KTAppPagePdfSave.init();
+    KTAppPageBannerSave.init();
  });
