@@ -49,6 +49,13 @@
             </a>
          </li>
          <!--end:::Tab item-->
+         <!--begin:::Tab item-->
+         <li class="nav-item">
+            <a class="nav-link text-active-primary d-flex align-items-center pb-5" data-bs-toggle="tab" href="#kt_settings_pageBanner">
+            <i class="ki-outline ki-package fs-2 me-2"></i> Page Banner
+            </a>
+         </li>
+         <!--end:::Tab item-->
       </ul>
       <!--end:::Tabs-->
       <!--begin:::Tab content-->
@@ -555,6 +562,103 @@
                         <!--end::Button-->
                         <!--begin::Button-->
                         <button type="submit" id="kt_add_pagepdf_submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary submit-pdfpage-btn">
+                        <span class="indicator-label">
+                        Save
+                        </span>
+                        <span class="indicator-progress">
+                        Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                        </span>
+                        </button>
+                        <!--end::Button-->
+                     </div>
+                  </div>
+               </div>
+               <!--end::Action buttons-->
+            </form>
+            <!--end::Form-->            
+         </div>
+         <!--end:::Tab pane-->
+          <!--begin:::Tab pane-->
+          <div class="tab-pane fade" id="kt_settings_pageBanner" role="tabpanel">
+            <!--begin::Form-->
+            <form id="kt_page_bannerUpdate_form" class="form">
+               <!--begin::Input group-->
+               <div class="card card-flush py-4">
+                  <div class="card-body pt-0">
+                     <div class="card-body pt-0">
+                        <div class="col-md-12">
+                           <label class="required form-label">Select Page TItle</label>
+                           <select class="form-select form-select-solid pageTitle_id3" name="pageTitle_id3" id="pageTitle_id3" data-control="select2" data-placeholder="Select an page title">
+                              <option></option>
+                              @foreach($pageTitle as $pageTitles)
+                              @if($pageTitles->uid == $data->pageContent[0]->pageTitle->uid)
+                                 <option value="{{ $pageTitles->uid }}" selected>{{ $pageTitles->page_title_en }} ({{ $pageTitles->page_title_hi  }})</option>
+                                 @else
+                                 <option value="{{ $pageTitles->uid }}">{{ $pageTitles->page_title_en }} ({{ $pageTitles->page_title_hi  }})</option>
+                                 @endif
+                              @endforeach
+                           </select>
+                        </div>
+                     </div>
+                     <!--begin::Input group-->
+                     <!--begin::News-->
+                     <div class="card-header">
+                        <div class="card-title">
+                           <h2>Update Page Banner</h2>
+                        </div>
+                     </div>
+                     <!--end::Card header-->
+                     <!--begin::Card body-->
+                     <div class="card-body pt-0">
+                        <!--begin::Input group-->
+                        <div class="" data-kt-ecommerce-catalog-add-product="auto-options">
+                           <!--begin::Repeater-->
+                           <div id="">
+                              <!--begin::Form group-->
+                              <div class="form-group">
+                                 <label class="required form-label mw-100 w-200px">Banner Title</label>
+                                 <label class="required form-label mw-100 w-200px" style="margin-left: 13px;">Banner image Format</label>
+                                 <div class="d-flex flex-column gap-3">
+                                    <div data-repeater-item class="form-group d-flex flex-wrap align-items-center gap-5">
+                                       <!--begin::Input-->
+                                       <input type="text" class="form-control mw-100 w-200px" name="bannertitle" value="{{ $data->pageContent[0]->content_banner[0]->banner_title_en  }}" placeholder="Banner title Name" />
+                                       <input type="file" class="form-control mw-100 w-200px" name="image" accept="image/*" />
+                                       <img src="{{ asset('resources/uploads/pagebanner/'. $data->pageContent[0]->content_banner[0]->public_url)  }}" width="50px" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--end::Form group-->
+                              <!--begin::Form group-->
+                              <!-- <div class="form-group mt-5">
+                                 <button type="button" data-repeater-create class="btn btn-sm btn-light-primary">
+                                    <i class="ki-outline ki-plus fs-2"></i> Add More
+                                 </button>
+                              </div> -->
+                              <!--end::Form group-->
+                           </div>
+                           <!--end::Repeater-->
+                        </div>
+                        <!--end::Input group-->
+                     </div>
+                     <!--end::Card header-->
+                  
+                     <!--end::Variations-->
+                     </div>
+                     <!--end::Card header-->
+                  </div>
+                  <!--end::Pricing-->
+               <!--end::Input group-->
+               <!--begin::Action buttons-->
+               <div class="row py-5">
+                  <div class="col-md-9 offset-md-3">
+                     <div class="d-flex">
+                        <!--begin::Button-->
+                        <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">
+                        Cancel
+                        </button>
+                        <!--end::Button-->
+                        <!--begin::Button-->
+                        <button type="submit" id="kt_add_pagebanner_submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary submit-bannerpage-btn">
                         <span class="indicator-label">
                         Save
                         </span>

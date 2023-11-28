@@ -290,6 +290,61 @@ class DynamicContentPageManagamentAPIController extends Controller
            }
             return response()->json($notification);
     }
+    public function pageBanner(Request $request)
+    {
+        try{
+            $validator=Validator::make($request->all(),
+                [
+                'pageTitle_id3'=>'required',
+                'bannertitle'=>'required',
+                'image' => "required|mimes:jpeg,bmp,png,gif,svg|max:10000"
+            ]);
+            if($validator->fails())
+            {
+                $notification =[
+                    'status'=>201,
+                    'message'=> $validator->errors()
+                ];
+            }
+            else{
+                
+                if($request->hasFile('image')){    
+                    $size = $this->getFileSize($request->file('image')->getSize());
+                    $extension = $request->file('image')->getClientOriginalExtension();
+                    $file=$request->file('image');
+                    $newname=time().rand(10,99).'.'.$file->getClientOriginalExtension();
+                    $path=resource_path(env('IMAGE_FILE_FOLDER_CMS').'/pagebanner');
+                    $file->move($path,$newname);
+                }
+    
+                $result=DB::table('dynamic_page_banner')->insert([
+                    'uid' => Uuid::uuid4(),
+                    'banner_title_en' => $request->bannertitle??'banner',
+                    'banner_title_hi' => $request->bannertitle??'banner',
+                    'public_url' => $newname,
+                    'dcpm_id' => $request->pageTitle_id3,
+                ]);
+            if($result == true)
+            {
+                $notification =[
+                    'status'=>200,
+                    'message'=>'Added successfully.'
+                ];
+            }
+            else{
+                $notification = [
+                        'status'=>201,
+                        'message'=>'some error accoured.'
+                    ];
+                 } 
+            }      
+           }catch(Throwable $e)
+           {
+            report($e);
+            return false;
+           }
+            return response()->json($notification);
+    }
     //***** Update Content Pages Data********************** */
     public function updateBasicInformation(Request $request)
     {
@@ -567,6 +622,62 @@ class DynamicContentPageManagamentAPIController extends Controller
             return false;
            }
             return response()->json($notification);
+    }
+
+    public function updatepageBanner(Request $request)
+    {
+        try{
+            $validator=Validator::make($request->all(),
+                [
+                'pageTitle_id3'=>'required',
+                'bannertitle'=>'required',
+                //'image' => "required|mimes:jpeg,bmp,png,gif,svg|max:10000"
+            ]);
+            if($validator->fails())
+            {
+                $notification =[
+                    'status'=>201,
+                    'message'=> $validator->errors()
+                ];
+            }
+            else{
+                if($request->hasFile('image')){    
+                    $size = $this->getFileSize($request->file('image')->getSize());
+                    $extension = $request->file('image')->getClientOriginalExtension();
+                    $file=$request->file('image');
+                    $newname=time().rand(10,99).'.'.$file->getClientOriginalExtension();
+                    $path=resource_path(env('IMAGE_FILE_FOLDER_CMS').'/pagebanner');
+                    $file->move($path,$newname);
+                }else{
+                    $newname = DB::table('dynamic_page_banner')->where('dcpm_id',$request->id)->first()->public_url;
+                }
+                $result= DB::table('dynamic_page_banner')->where('dcpm_id',$request->id)->update([
+                    'banner_title_en' => $request->bannertitle??'banner',
+                    'banner_title_hi' => $request->bannertitle??'banner',
+                    'public_url' => $newname,
+                    'dcpm_id' => $request->pageTitle_id3,
+                    //'archivel_date' => Carbon::createFromFormat('Y-m-d',$request->enddate)->addDays(env('TENDER_ARCHIVEL')),
+                    ]);
+             // dd($result);  
+            if($result == true)
+            {
+                $notification =[
+                    'status'=>200,
+                    'message'=>'Added successfully.'
+                ];
+            }
+            else{
+                $notification = [
+                        'status'=>201,
+                        'message'=>'some error accoured.'
+                    ];
+                } 
+            }
+       }catch(Throwable $e){report($e);
+        return false;
+       }
+        return response()->json($notification);
+        
     }
     /**
      * Display the specified resource.

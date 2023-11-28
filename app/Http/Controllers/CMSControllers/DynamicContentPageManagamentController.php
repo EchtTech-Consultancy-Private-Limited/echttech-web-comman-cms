@@ -52,6 +52,7 @@ class DynamicContentPageManagamentController extends Controller
             $crudUrlTemplate['create_pagecontent'] = route('pagecontent-save');
             $crudUrlTemplate['create_pagegallery'] = route('pagegallery-save');
             $crudUrlTemplate['create_pagepdf'] = route('pagepdf-save');
+            $crudUrlTemplate['create_pagebanner'] = route('pagebanner-save');
         }else{
             $accessPermission = $this->checkAccessMessage();
            // $accessPermission = "You don't have permission to perform this action!";
@@ -104,6 +105,7 @@ class DynamicContentPageManagamentController extends Controller
         $crudUrlTemplate['update_pagecontent'] = route('cpi-content-update');
         $crudUrlTemplate['update_pagegallery'] = route('cpi-gallery-update');
         $crudUrlTemplate['update_pagepdf'] = route('cpi-pdf-update');
+        $crudUrlTemplate['update_pagebanner'] = route('cpi-banner-update');
         $crudUrlTemplate['deletepdfimg'] = route('pdfimg-delete');
 
 
@@ -129,6 +131,10 @@ class DynamicContentPageManagamentController extends Controller
                 $content_gallery= DB::table('dynamic_content_page_gallery')->where('dcpm_id',$metacontents->uid)->where('soft_delete','0')->get();
                 if($content_gallery){
                     $newData->content_gallery = $content_gallery;
+                }
+                $content_banner= DB::table('dynamic_page_banner')->where('dcpm_id',$metacontents->uid)->where('soft_delete','0')->get();
+                if($content_banner){
+                    $newData->content_banner = $content_banner;
                 }
            $datas[] = $newData;
         }
