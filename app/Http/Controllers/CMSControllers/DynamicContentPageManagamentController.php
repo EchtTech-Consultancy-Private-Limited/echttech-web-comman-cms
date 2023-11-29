@@ -132,9 +132,11 @@ class DynamicContentPageManagamentController extends Controller
                 if($content_gallery){
                     $newData->content_gallery = $content_gallery;
                 }
-                $content_banner= DB::table('dynamic_page_banner')->where('dcpm_id',$metacontents->uid)->where('soft_delete','0')->get();
+                $content_banner= DB::table('dynamic_page_banner')->where('dcpm_id',$metacontents->uid)->where('soft_delete','0')->first();
                 if($content_banner){
                     $newData->content_banner = $content_banner;
+                }else{
+                    $newData->content_banner = '';
                 }
            $datas[] = $newData;
         }

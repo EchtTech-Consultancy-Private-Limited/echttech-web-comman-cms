@@ -621,9 +621,11 @@
                                  <div class="d-flex flex-column gap-3">
                                     <div data-repeater-item class="form-group d-flex flex-wrap align-items-center gap-5">
                                        <!--begin::Input-->
-                                       <input type="text" class="form-control mw-100 w-200px" name="bannertitle" value="{{ $data->pageContent[0]->content_banner[0]->banner_title_en  }}" placeholder="Banner title Name" />
+                                       <input type="text" class="form-control mw-100 w-200px" name="bannertitle" value="{{ $data->pageContent[0]->content_banner->banner_title_en ??''  }}" placeholder="Banner title Name" />
                                        <input type="file" class="form-control mw-100 w-200px" name="image" accept="image/*" />
-                                       <img src="{{ asset('resources/uploads/pagebanner/'. $data->pageContent[0]->content_banner[0]->public_url)  }}" width="50px" />
+                                       @if($data->pageContent[0]->content_banner !='')
+                                       <img src="{{ asset('resources/uploads/pagebanner/'. $data->pageContent[0]->content_banner->public_url)  }}" width="50px" />
+                                       @endif
                                     </div>
                                  </div>
                               </div>

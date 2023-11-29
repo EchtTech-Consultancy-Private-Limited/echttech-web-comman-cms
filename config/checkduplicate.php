@@ -6,6 +6,6 @@ return [
     'emails' => "OFF",
     'landline_no' => "OFF",
     'Extention_no' => "OFF",
-    'CHECK_LOGIN_USER_LOGGEDIN' => "ON",
+    'CHECK_LOGIN_USER_LOGGEDIN' => "OFF",
    
 ];
