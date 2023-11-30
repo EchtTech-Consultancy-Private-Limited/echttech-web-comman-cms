@@ -59,7 +59,7 @@ class DynamicContentPageManagamentController extends Controller
         }
         
 
-        $pageTitle = DB::table('dynamic_content_page_metatag')->select('uid','page_title_en','page_title_hi','menu_slug')->where([['soft_delete','=','0']])->get();
+        $pageTitle = DB::table('dynamic_content_page_metaTag')->select('uid','page_title_en','page_title_hi','menu_slug')->where([['soft_delete','=','0']])->get();
         $menu=WebsiteMenuManagement::select('name_en','name_hi','url','uid')->where([['soft_delete','=','0']])->get();
         
         return view('cms-view.dynamic-content-page-managament.content-page-add',
@@ -109,11 +109,11 @@ class DynamicContentPageManagamentController extends Controller
         $crudUrlTemplate['deletepdfimg'] = route('pdfimg-delete');
 
 
-        $pageTitle = DB::table('dynamic_content_page_metatag')->select('uid','page_title_en','page_title_hi')->where([['soft_delete','=','0']])->get();
+        $pageTitle = DB::table('dynamic_content_page_metaTag')->select('uid','page_title_en','page_title_hi')->where([['soft_delete','=','0']])->get();
         $menu=WebsiteMenuManagement::select('name_en','name_hi','url','uid')->where([['soft_delete','=','0']])->get();
         
 
-        $metacontent=DB::table('dynamic_content_page_metatag')->select('*')->where('uid', $request->id)->where('soft_delete','0')->get();
+        $metacontent=DB::table('dynamic_content_page_metaTag')->select('*')->where('uid', $request->id)->where('soft_delete','0')->get();
         
         foreach($metacontent as $metacontents){
             
