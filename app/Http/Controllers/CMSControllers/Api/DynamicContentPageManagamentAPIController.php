@@ -23,8 +23,8 @@ class DynamicContentPageManagamentAPIController extends Controller
      */
     public function index()
     {
-        $data=DB::table('dynamic_content_page_metaTag')->where('soft_delete','0')->get();
-        $totalRecords = DB::table('dynamic_content_page_metaTag')->where('soft_delete','0')->count();
+        $data=DB::table('dynamic_content_page_metatag')->where('soft_delete','0')->get();
+        $totalRecords = DB::table('dynamic_content_page_metatag')->where('soft_delete','0')->count();
         $resp = new \stdClass;
         $resp->iTotalRecords = $totalRecords;
         $resp->iTotalDisplayRecords = $totalRecords;
@@ -66,7 +66,7 @@ class DynamicContentPageManagamentAPIController extends Controller
      */
     public function basicInformation(Request $request)
     {
-        //$exitValue = DB::table('dynamic_content_page_metaTag')->where('page_title_en', $request->page_title_en)->count() > 0;
+        //$exitValue = DB::table('dynamic_content_page_metatag')->where('page_title_en', $request->page_title_en)->count() > 0;
         // if($exitValue == 'false'){
         //     $notification =[
         //         'status'=>201,
@@ -89,7 +89,7 @@ class DynamicContentPageManagamentAPIController extends Controller
             }
             else{
             
-            $result=DB::table('dynamic_content_page_metaTag')->insert([
+            $result=DB::table('dynamic_content_page_metatag')->insert([
                         'uid' => Uuid::uuid4(),
                         'menu_uid' => explode(',',$request->menu_id)[0],
                         'menu_slug' => explode(',',$request->menu_id)[1],
@@ -364,7 +364,7 @@ class DynamicContentPageManagamentAPIController extends Controller
             }
             else{
             
-            $result=DB::table('dynamic_content_page_metaTag')->where('uid',$request->id)->update([
+            $result=DB::table('dynamic_content_page_metatag')->where('uid',$request->id)->update([
                         'menu_uid' => explode(',',$request->menu_id)[0],
                         'menu_slug' => explode(',',$request->menu_id)[1],
                         'page_title_en' => $request->page_title_en,
@@ -698,7 +698,7 @@ class DynamicContentPageManagamentAPIController extends Controller
      */
     public function edit($id)
     {
-        $data=DB::table('dynamic_content_page_metaTag')->where('soft_delete','0')->where('uid',$id)->first();
+        $data=DB::table('dynamic_content_page_metatag')->where('soft_delete','0')->where('uid',$id)->first();
         if($data)
                 {
                     return response()->json(['data'=>$data],200);
@@ -731,10 +731,10 @@ class DynamicContentPageManagamentAPIController extends Controller
      */
     public function destroy(DynamicContentPageManagament $dynamicContentPageManagament)
     {
-        $data=DB::table('dynamic_content_page_metaTag')->where('uid',$id)->first();
+        $data=DB::table('dynamic_content_page_metatag')->where('uid',$id)->first();
         if($data)
         {
-            DB::table('dynamic_content_page_metaTag')->where('uid',$id)->update(['soft_delete'=>1]);
+            DB::table('dynamic_content_page_metatag')->where('uid',$id)->update(['soft_delete'=>1]);
            // DB::table('dynamic_page_content')->where('dcpm_id',$id)->update(['soft_delete'=>1]);
             //DB::table('dynamic_content_page_pdf')->where('dcpm_id',$id)->update(['soft_delete'=>1]);
            // DB::table('dynamic_content_page_gallery')->where('dcpm_id',$id)->update(['soft_delete'=>1]);
