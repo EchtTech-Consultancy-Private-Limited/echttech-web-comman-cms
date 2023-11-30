@@ -483,7 +483,7 @@ var KTAppBasicInformationSave = function () {
                          if (history.scrollRestoration) {
                              history.scrollRestoration = 'manual';
                          }
-                      // location.href = 'contentpage-create'; // reload page
+                       location.href = 'contentpage-create'; // reload page
                       }, 1500);
                       
                    } else {

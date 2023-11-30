@@ -1,0 +1,27 @@
+<?php 
+
+return[
+        'dashboard' => 'Dashboards',
+        'usermanagement' => 'User Management',
+        'permissions' => 'Permissions',
+        'employeedirectory' => 'Employee Directory',
+        'departmentdesignation' => 'Department & Designation',
+        'recentactivity' => 'Recent Activity',
+        'RTIassets' => 'RTI Assets',
+        'dynamicformpages' => 'Dynamic Form Pages',
+        'websitemenu' => 'Website Menu',
+        'websitecoresettings' => 'Website Core Settings',
+        'homepagebanner' => 'Home Page Banner',
+        'dynamiccontentpage' => 'Pages Content',
+        'gallerymanagement' => 'Gallery Management',
+        'newsmanagement' => 'News Management',
+        'tendersmanagement' => 'Tenders Management',
+        'eventsmanagement' => 'Events Management',
+        'datamanagement' => 'Data Management',
+        'modulemanagement' => 'Module Management',
+        'logs' => 'Logs',
+        'help' => 'Help',
+        'audittrail' => 'Audit Trail',
+        'developer' => 'Developer',
+        'documentation' => 'Documentation',
+];

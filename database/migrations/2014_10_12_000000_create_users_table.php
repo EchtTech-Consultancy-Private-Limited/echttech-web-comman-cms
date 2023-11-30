@@ -37,7 +37,7 @@ return new class extends Migration
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
         DB::table('users')->insert([
-            ['name' => 'Super Admin', 'email' => 'admin@gmail.com', 'email_verified_at' => '2023-08-11 23:28:25', 'password' => '$2y$10$ugaph24r5kowuOdZx.3ff.hLhxK6hBVU3kZ3DReNfHP1JNkkkEDT2','role_id'=>'1','login_status'=>'0','role_name'=>'Super Admin'],
+            ['name' => 'Super Admin', 'email' => 'superadmin@gmail.com', 'email_verified_at' => '2023-08-11 23:28:25', 'password' => '$2y$10$ugaph24r5kowuOdZx.3ff.hLhxK6hBVU3kZ3DReNfHP1JNkkkEDT2','role_id'=>'1','login_status'=>'0','role_name'=>'Super Admin'],
         ]);
         Schema::create('role_type_users', function (Blueprint $table) {
             $table->Uuid('uid')->primary();

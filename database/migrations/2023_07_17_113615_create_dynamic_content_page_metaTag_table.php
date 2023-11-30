@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('dynamic_content_page_metaTag', function (Blueprint $table) {
+        Schema::create('dynamic_content_page_metatag', function (Blueprint $table) {
             $table->uuid('uid')->primary();
             $table->uuid('menu_uid');
             $table->string('menu_slug');
@@ -105,7 +105,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dynamic_content_page_metaTag');
+        Schema::dropIfExists('dynamic_content_page_metatag');
         Schema::dropIfExists('dynamic_content_page_gallery');
         Schema::dropIfExists('dynamic_content_page_pdf');
         Schema::dropIfExists('dynamic_page_content');
