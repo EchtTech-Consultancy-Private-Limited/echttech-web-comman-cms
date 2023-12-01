@@ -38,14 +38,14 @@ class ForgotPasswordController extends Controller
             ]);
 
           $token = Str::random(64);
-
+          User::where('email', $request->email)->update(['remember_token' => $token]);
           DB::table('password_resets')->insert([
               'email' => $request->email,
               'token' => $token,
               'created_at' => Carbon::now()
             ]);
 
-          Mail::send('email.forgetPassword', ['token' => $token], function($message) use($request){
+          Mail::send('cms-view.email.forgetPassword', ['token' => $token], function($message) use($request){
               $message->to($request->email);
               $message->subject('Reset Password');
           });
@@ -68,31 +68,27 @@ class ForgotPasswordController extends Controller
        */
       public function submitResetPasswordForm(Request $request)
       {
+        
           $request->validate([
               'email' => ['required','string','email','max:50','exists:users','regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix'],
-              'password'  => 'required|min:8|max:15|confirmed|string',
-              'password_confirmation'  => 'required|same:password',
-              'captcha'  => 'required|captcha',
+              'password'  => 'required|min:8|max:15|string',
+              'passwordconfirmation'  => 'required|same:password',
+              //'captcha'  => 'required|captcha',
           ]);
 
-         // dd($request->all());
-
+         // dd($request->token);
           $updatePassword = DB::table('password_resets')->where(['email' => $request->email,'token' => $request->token ])->first();
-
-        //  dd($updatePassword);
+          //dd($updatePassword);
           if(!$updatePassword){
-              return back()->withInput()->with('error', 'Invalid Email ID!!!!');
+              return response()->json(['message' => "Invalid Email ID!!!!",'status'=>201],201);
           }
-
-          $user = User::where('email', $request->email)->update(['password' => Hash::make($request->password)]);
-
-            $data=DB::table('password_resets')->where(['email'=> $request->email])->get('id');
-           // dd($data[0]->id);
-
-            $e = password_reset::find($data[0]->id);
-            $e->delete();
-
-
-          return redirect('/')->with('success', 'Your password has been changed!');
+            $user = User::where('email', $request->email)->update(['password' => Hash::make($request->password)]);
+           // $data=DB::table('password_resets')->where(['email'=> $request->email])->get('id');
+            DB::table('password_resets')->where(['email'=> $request->email])->delete();
+            //dd($data[0]->id);
+            //$e = password_reset::find($data[0]->id);
+            //$data[0]->id->delete();
+            return response()->json(['message' => "Your password has been changed!",'status'=>200],200);
+          //return redirect('/')->with('success', 'Your password has been changed!');
       }
 }

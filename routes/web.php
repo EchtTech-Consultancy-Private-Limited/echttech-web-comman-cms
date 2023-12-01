@@ -45,7 +45,7 @@ Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('forget-user', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget-user');
 Route::post('forget-change', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forgetuser');
 Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset-password');
-Route::get('update-password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('update-password');
+Route::post('update_password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('update_password');
 Route::get('/reload-captcha', [LoginController::class, 'reloadCaptcha']);
 
 Route::post('mimeimagecheck', [CommonAPIController::class, 'imageMimeCheck'])->name('mimeimagecheck');
