@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('roles_and_permissions', function (Blueprint $table) {
-            $table->Uuid('id')->primary();
+            $table->id()->primary();
             $table->Uuid('user_id')->nullable();
             $table->Uuid('role_id')->nullable();
             $table->string('role_name')->nullable();

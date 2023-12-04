@@ -134,7 +134,13 @@ var KTAuthNewPassword = function() {
         });
 
     }
-
+    function hashPassword(str) {
+        for(var i=0; i<5;i++)
+            {
+                var hashHex=reverseString(btoa(str));
+            }
+        return hashHex;
+      }
     var handleSubmitAjax = function (e) {
         // Handle form submit
         submitButton.addEventListener('click', function (e) {
@@ -151,21 +157,19 @@ var KTAuthNewPassword = function() {
 
                     // Disable button to avoid multiple click
                     submitButton.disabled = true;
-
+                    var pas = hashPassword($('.password').val());
                     // Check axios library docs: https://axios-http.com/docs/intro
                     axios.post(submitButton.closest('form').getAttribute('action'), new FormData(form)).then(function (response) {
-                        if (response) {
-                            form.reset();
-
+                        if (response.data.status ==200) {
+                            //form.reset();
                             const redirectUrl = form.getAttribute('data-kt-redirect-url');
-
                             if (redirectUrl) {
-                                location.href = redirectUrl;
+                              location.href = redirectUrl;
                             }
                         } else {
                             // Show error popup. For more info check the plugin's official documentation: https://sweetalert2.github.io/
                             Swal.fire({
-                                text: "Sorry, the email is incorrect, please try again.",
+                                text: response.data.message,
                                 icon: "error",
                                 buttonsStyling: false,
                                 confirmButtonText: "Ok, got it!",
@@ -224,8 +228,8 @@ var KTAuthNewPassword = function() {
     return {
         // public functions
         init: function() {
-            form = document.querySelector('#kt_new_password_form');
-            submitButton = document.querySelector('#kt_new_password_submit');
+            form = document.querySelector('#kt_newSet_password_form');
+            submitButton = document.querySelector('#kt_update_password_submit');
             passwordMeter = KTPasswordMeter.getInstance(form.querySelector('[data-kt-password-meter="true"]'));
 
             handleForm();
