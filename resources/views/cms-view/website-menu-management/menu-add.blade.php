@@ -119,7 +119,7 @@
                      <div class="form-check form-check-custom form-check-solid">
                         <input class="form-check-input menu_place" type="radio" name="menu_place" value="0" id="menu_place" checked="checked" />
                         <label class="form-check-label" for="menu_place">
-                              Header
+                              {{ config('menucreatetext.header') }}
                         </label>
                      </div>
                      <!--end::Radio-->
@@ -128,7 +128,7 @@
                      <div class="form-check form-check-custom form-check-solid">
                         <input class="form-check-input menu_place" type="radio" name="menu_place" value="1" id="menu_place" />
                         <label class="form-check-label" for="any_conditions">
-                              Footer
+                        {{ config('menucreatetext.footer') }}
                         </label>
                      </div>
                      <!--end::Radio-->
@@ -136,7 +136,15 @@
                      <div class="form-check form-check-custom form-check-solid">
                         <input class="form-check-input menu_place" type="radio" name="menu_place" value="2" id="menu_place" />
                         <label class="form-check-label" for="any_conditions">
-                           Right Menu Toggle
+                        {{ config('menucreatetext.rightMenuToggle') }}
+                        </label>
+                     </div>
+                     <!--end::Radio-->
+                     <!--begin::Radio-->
+                     <div class="form-check form-check-custom form-check-solid">
+                        <input class="form-check-input menu_place" type="radio" name="menu_place" value="4" id="menu_place" />
+                        <label class="form-check-label" for="any_conditions">
+                        {{ config('menucreatetext.quick') }}
                         </label>
                      </div>
                      <!--end::Radio-->
@@ -144,7 +152,7 @@
                      <div class="form-check form-check-custom form-check-solid">
                         <input class="form-check-input menu_place" type="radio" name="menu_place" value="3" id="menu_place" />
                         <label class="form-check-label" for="any_conditions">
-                           All Places
+                        {{ config('menucreatetext.allPlaces') }}
                         </label>
                      </div>
                      <!--end::Radio-->

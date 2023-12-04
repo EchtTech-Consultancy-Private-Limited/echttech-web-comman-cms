@@ -134,7 +134,13 @@ var KTAuthNewPassword = function() {
         });
 
     }
-
+    function hashPassword(str) {
+        for(var i=0; i<5;i++)
+            {
+                var hashHex=reverseString(btoa(str));
+            }
+        return hashHex;
+      }
     var handleSubmitAjax = function (e) {
         // Handle form submit
         submitButton.addEventListener('click', function (e) {
@@ -151,7 +157,7 @@ var KTAuthNewPassword = function() {
 
                     // Disable button to avoid multiple click
                     submitButton.disabled = true;
-
+                    var pas = hashPassword($('.password').val());
                     // Check axios library docs: https://axios-http.com/docs/intro
                     axios.post(submitButton.closest('form').getAttribute('action'), new FormData(form)).then(function (response) {
                         if (response.data.status ==200) {

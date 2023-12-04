@@ -76,7 +76,7 @@ class ForgotPasswordController extends Controller
               //'captcha'  => 'required|captcha',
           ]);
 
-         // dd($request->token);
+          //dd(base64_decode(strrev($request->password)));
           $updatePassword = DB::table('password_resets')->where(['email' => $request->email,'token' => $request->token ])->first();
           //dd($updatePassword);
           if(!$updatePassword){
