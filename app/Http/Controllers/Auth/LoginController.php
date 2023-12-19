@@ -159,7 +159,7 @@ class LoginController extends Controller
     public function logout(Request $request)
     {
      
-        $userId = Auth::user()->id;
+        $userId = Auth::user()->id ??'';
       
         $br= $this->getBrowser();
         DB::table('users')->where('id', $userId)->update(array('last_login'=>date('d-m-Y H:i:s'),'ip'=>$request->ip(),'user_agent'=>$br['name'],'login_status'=>'0'));

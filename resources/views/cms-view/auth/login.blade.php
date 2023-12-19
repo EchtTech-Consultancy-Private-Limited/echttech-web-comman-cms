@@ -30,6 +30,13 @@
             background-image: url('{{ asset("assets-cms/media/auth/bg10-dark.jpg") }}');
             }
          </style>
+         <!-- <iframe 
+  src="https://theorg.com/org/echt-tech-consultancy-services-pvt-ltd/embed" 
+  width="100%" 
+  height="550px" 
+  frameBorder="0" 
+  style="border: 1px solid #eaeaeb; border-radius: 4px;"> 
+</iframe> -->
          <div class="d-flex flex-column flex-lg-row flex-column-fluid">
             <div class="d-flex flex-lg-row-fluid">
                <div class="d-flex flex-column flex-center pb-0 pb-lg-10 p-10 w-100">
