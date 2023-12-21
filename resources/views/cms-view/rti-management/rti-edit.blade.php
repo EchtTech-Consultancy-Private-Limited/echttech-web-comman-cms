@@ -121,7 +121,7 @@
                               <label class="form-label required">Description (English)</label>
                               <!--end::Label-->
                               <!--begin::Editor-->
-                                 <div class="min-h-200px mb-2 summernote kt_summernote_en" id="kt_summernote_en">{{$data->title_name_hi}}</div>
+                                 <div class="min-h-200px mb-2 summernote kt_summernote_en" id="kt_summernote_en">{{$data->description_en}}</div>
                               <!--end::Editor-->
                               <!--begin::Description-->
                               <div class="text-muted fs-7">Set a description to the news for better visibility.</div>
@@ -134,7 +134,7 @@
                               <label class="form-label mt-8">विवरण (हिन्दी में)</label>
                               <!--end::Label-->
                               <!--begin::Editor-->
-                                 <div class="min-h-200px mb-2 summernote kt_summernote_hi" id="kt_summernote_hi">{{$data->title_name_hi}}</div>
+                                 <div class="min-h-200px mb-2 summernote kt_summernote_hi" id="kt_summernote_hi">{{$data->description_hi}}</div>
                               <!--end::Editor-->
                               <!--begin::Description-->
                               <div class="text-muted fs-7">Set a description to the news for better visibility.</div>
@@ -162,7 +162,7 @@
                            <!--begin::Input group-->
                            <div class="" data-kt-ecommerce-catalog-add-product="auto-options">
                               <!--begin::Repeater-->
-                              <div id="kt_rti_add_multiple_options">
+                              <div id="kt_rti_edit_multiple_options">
                                  <!--begin::Form group-->
                                  <div class="form-group">
                                     <label class="required form-label mw-100 w-175px">Pdf Title</label>
@@ -170,7 +170,7 @@
                                     <label class="required form-label mw-100 w-175px" style="margin-left: 12px;">Start Date</label>
                                     <label class="required form-label mw-100 w-175px" style="margin-left: 12px;">End Start</label>
                                     <label class="required form-label mw-100 w-175px">PDF Format</label>
-                                    <div data-repeater-list="kt_rti_add_multiple_options" class="d-flex flex-column gap-3">
+                                    <div data-repeater-list="kt_rti_edit_multiple_options" class="d-flex flex-column gap-3">
                                        @if(isset($pdfData))
                                        @foreach($pdfData as $pdfDatas)
                                        <div data-repeater-item class="form-group d-flex flex-wrap align-items-center gap-5">
@@ -205,14 +205,15 @@
                                        </div>
                                        @endif
                                     </div>
+                                    <div class="form-group mt-5">
+                                       <button type="button" data-repeater-create class="btn btn-sm btn-light-primary">
+                                       <i class="ki-outline ki-plus fs-2"></i> Add More
+                                       </button>
+                                    </div>
                                  </div>
                                  <!--end::Form group-->
                                  <!--begin::Form group-->
-                                 <div class="form-group mt-5">
-                                    <button type="button" data-repeater-create class="btn btn-sm btn-light-primary">
-                                    <i class="ki-outline ki-plus fs-2"></i> Add More
-                                    </button>
-                                 </div>
+                                 
                                  <!--end::Form group-->
                               </div>
                               <!--end::Repeater-->

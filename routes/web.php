@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CMSControllers\API\CommonAPIController;
+use App\Http\Controllers\CMSControllers\ImageController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\CMSControllers\EmpDepartDesignationController;
@@ -56,7 +57,7 @@ Route::post('fetch-designation', [EmpDepartDesignationController::class, 'fetchD
 
 //,->middleware('throttle:custom_Limit')
 
-
+Route::get('/image/{path}', [ImageController::class, 'encryptPath']);
 
 require __DIR__ .'/cms_web.php';
 

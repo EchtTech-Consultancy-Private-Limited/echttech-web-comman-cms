@@ -35,11 +35,11 @@ var KTAppRtiSave = function () {
                    submitButton.setAttribute('data-kt-indicator', 'on');
                    submitButton.disabled = true;
                    //$('#examAddModal').modal('hide');
-                  //var formData= new FormData(form);
-                  //formData.append("kt_description_en", $('#kt_summernote_en').summernote('code'));
-                 // formData.append("kt_description_hi", $('#kt_summernote_hi').summernote('code'));
+                  var formData= new FormData(form);
+                  formData.append("kt_description_en", $('#kt_summernote_en').summernote('code'));
+                  formData.append("kt_description_hi", $('#kt_summernote_hi').summernote('code'));
                 axios.post(crudUrlTemplate.create_rti,
-                            new FormData(form), {
+                           formData, {
                    }).then(function (response) {
                    if (response.data.status ==200) {
                       toastr.success(
@@ -100,7 +100,7 @@ var KTAppRtiSave = function () {
           show: function () {
               $(this).slideDown();
               // Init select2 on new repeated items
-              initConditionsSelect2();
+              //initConditionsSelect2();
           },
           hide: function (deleteElement) {
               $(this).slideUp(deleteElement);
