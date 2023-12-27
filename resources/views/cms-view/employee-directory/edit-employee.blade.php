@@ -183,8 +183,9 @@
                                         <!--begin::Label-->
                                         <label class="required fs-6 fw-semibold mb-2">Description (English)</label>
                                         <!--end::Label-->
+                                        <div class="min-h-200px mb-2 summernote kt_summernote_en" id="kt_summernote_en">{!! $data->description_en !!}</div>
                                         <!--begin::Input-->
-                                        <textarea class="form-control mb-2 description_e" type="text" placeholder="" name="description_e">{!! $data->description_en !!}</textarea>
+                                        <!-- <textarea class="form-control mb-2 description_e" type="text" placeholder="" name="description_e">{!! $data->description_en !!}</textarea> -->
                                         <!--end::Input-->
                                     </div>
                                     <!--end::Col-->
@@ -193,8 +194,9 @@
                                         <!--begin::Label-->
                                         <label class="required fs-6 fw-semibold mb-2">विवरण (हिन्दी)</label>
                                         <!--end::Label-->
+                                        <div class="min-h-200px mb-2 summernote kt_summernote_hi" id="kt_summernote_hi">{!! $data->description_hi !!}</div>
                                         <!--begin::Input-->
-                                        <textarea class="form-control mb-2 description_h" type="text" placeholder="" name="description_h">{!! $data->description_hi !!}</textarea>
+                                        <!-- <textarea class="form-control mb-2 description_h" type="text" placeholder="" name="description_h">{!! $data->description_hi !!}</textarea> -->
                                         <!--end::Input-->
                                     </div>
                                     <!--end::Col-->

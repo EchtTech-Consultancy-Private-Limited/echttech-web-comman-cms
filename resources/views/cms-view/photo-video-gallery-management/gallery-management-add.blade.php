@@ -7,7 +7,7 @@
  {{ __('Gallery Setting') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Gallery Add') }}
+ {{ __('Add') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/gallery-management-add.js') }}"></script>

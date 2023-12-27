@@ -4,7 +4,7 @@
     | {{__('Dashboard')}}
 @endsection
 @section('pageTitle')
- {{ __('Event List') }}
+ {{ __('Event') }}
 @endsection
 @section('breadcrumbs')
  {{ __('Listing') }}

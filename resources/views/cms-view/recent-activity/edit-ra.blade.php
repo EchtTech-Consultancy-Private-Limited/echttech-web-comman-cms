@@ -6,7 +6,7 @@
  {{ __('Recent Activity') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Recent Activity Create') }}
+ {{ __('Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/recent-activity-edit.js') }}"></script>
@@ -109,6 +109,43 @@
                                     <!--end::Col-->
                                 </div>
                                 </div>
+                                <div class="fv-row mb-10">
+                                <div class="row g-9 mb-7">
+                                    <!--begin::Col-->
+                                    <div class="col-md-3 fv-row">
+                                        <input class="form-check-input" type="radio" placeholder="" name="notification_others" value="1" <?php if($data->notification_others =='1'){ echo 'checked'; }else{ echo ''; } ?> />
+                                         <!--begin::Label-->
+                                         <label class="required fs-6 fw-semibold mb-2">Notification</label>
+                                        <!--end::Label-->
+                                        <!--begin::Input-->
+                                        <!--end::Input-->
+                                    </div>
+                                    <!--end::Col-->
+                                    <!--begin::Col-->
+                                    <div class="col-md-3 fv-row">
+                                        <!--begin::Input-->
+                                        <input class="form-check-input" type="radio" placeholder="" name="notification_others" value="2" <?php if($data->notification_others =='2'){ echo 'checked'; }else{ echo ''; } ?> />
+                                        <!--end::Input-->
+                                        <!--begin::Label-->
+                                        <label class="required fs-6 fw-semibold mb-2">Others (Press Release)</label>
+                                        <!--end::Label-->
+                                    </div>
+                                    <!--end::Col-->
+                                </div>
+                           </div>
+                                    <!--begin::Input group-->
+                           <div class="mb-10 fv-row">
+                              <!--begin::Label-->
+                              <div class="col-md-12">
+                                 <label class="required form-label required">Link</label>
+                              </div>
+                                 <!--end::Label-->
+                              <!--begin::Input-->
+                              <div class="col-md-12">
+                                 <input type="url" name="link" class="form-control mb-2 link" id="link" placeholder="http://" value="{{ $data->url_link }}" />
+                              </div>
+                              <!--end::Input-->
+                           </div>
                            <!--begin::Input group-->
                            <div class="mb-10 fv-row">
                               <!--begin::Label-->

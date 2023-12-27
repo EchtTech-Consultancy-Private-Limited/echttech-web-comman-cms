@@ -74,23 +74,23 @@
                         <!--begin::Breadcrumb-->
                         <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-1">
                            <!--begin::Item-->
-                           <li class="breadcrumb-item text-muted">
+                           <!-- <li class="breadcrumb-item text-muted">
                               <a href="{{ route('dashboard') }}" class="text-muted text-hover-primary">
-                              Home                           
+                                 Dashboard                           
                               </a>
-                           </li>
+                           </li> -->
                            <!--end::Item-->
                            <!--begin::Item-->
-                           <li class="breadcrumb-item">
+                           <!-- <li class="breadcrumb-item">
                               <span class="bullet bg-gray-300 w-5px h-2px"></span>
-                           </li>
+                           </li> -->
                            <!--end::Item-->
                            <!--begin::Item-->
-                           <li class="breadcrumb-item text-muted">
+                           <!-- <li class="breadcrumb-item text-muted">
                               @section('pageTitle')
                               {{ config('app.name') }}
                               @show                                            
-                           </li>
+                           </li> -->
                            <!--end::Item-->
                            <!--begin::Item-->
                            <li class="breadcrumb-item">
@@ -112,16 +112,16 @@
                         <!--begin::Wrapper-->
                         <div class="me-4">
                            <!--begin::Menu-->
-                           <a href="#" class="btn btn-sm btn-flex btn-light btn-active-primary fw-bold" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
-                           <i class="ki-outline ki-filter fs-5 text-gray-500 me-1"></i>               
-                           Filter
-                           </a>
+                           <!-- <a href="#" class="btn btn-sm btn-flex btn-light btn-active-primary fw-bold" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
+                              <i class="ki-outline ki-filter fs-5 text-gray-500 me-1"></i>               
+                              Filter
+                           </a> -->
                            <!--begin::Menu 1-->
                            <div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" id="kt_menu_64afb1fdcc422">
                               <!--begin::Header-->
-                              <div class="px-7 py-5">
+                              <!-- <div class="px-7 py-5">
                                  <div class="fs-5 text-dark fw-bold">Filter Options</div>
-                              </div>
+                              </div> -->
                               <!--end::Header-->
                               <!--begin::Menu separator-->
                               <div class="separator border-gray-200"></div>
@@ -202,8 +202,8 @@
                         </div>
                         <!--end::Wrapper-->
                         <!--begin::Button-->
-                        <a href="#" class="btn btn-sm btn-primary"  data-bs-toggle="modal" data-bs-target="#kt_modal_create_app" id="kt_toolbar_primary_button">
-                        Create </a>
+                        <!-- <a href="#" class="btn btn-sm btn-primary"  data-bs-toggle="modal" data-bs-target="#kt_modal_create_app" id="kt_toolbar_primary_button">
+                        Create </a> -->
                         <!--end::Button-->
                      </div>
                      @endif

@@ -177,8 +177,11 @@
                                         <!--begin::Label-->
                                         <label class="required fs-6 fw-semibold mb-2">Description (English)</label>
                                         <!--end::Label-->
+                                        <!--begin::Editor-->
+                                            <div class="min-h-200px mb-2 summernote kt_summernote_en" id="kt_summernote_en"></div>
+                                        <!--end::Editor-->
                                         <!--begin::Input-->
-                                        <textarea class="form-control mb-2 description_e" type="text" placeholder="" name="description_e" value="" ></textarea>
+                                        <!-- <textarea class="form-control mb-2 description_e" type="text" placeholder="" name="description_e" value="" ></textarea> -->
                                         <!--end::Input-->
                                     </div>
                                     <!--end::Col-->
@@ -187,8 +190,11 @@
                                         <!--begin::Label-->
                                         <label class="required fs-6 fw-semibold mb-2">विवरण (हिन्दी)</label>
                                         <!--end::Label-->
+                                        <!--begin::Editor-->
+                                            <div class="min-h-200px mb-2 summernote kt_summernote_hi" id="kt_summernote_hi"></div>
+                                        <!--end::Editor-->
                                         <!--begin::Input-->
-                                        <textarea class="form-control mb-2 description_h" type="text" placeholder="" name="description_h" value="" ></textarea>
+                                        <!-- <textarea class="form-control mb-2 description_h" type="text" placeholder="" name="description_h" value="" ></textarea> -->
                                         <!--end::Input-->
                                     </div>
                                     <!--end::Col-->

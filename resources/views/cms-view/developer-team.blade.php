@@ -7,7 +7,7 @@
  {{ __('Developer Management') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Developer List') }}
+ {{ __('Listing') }}
 @endsection
 @section('content')
 <div class="post d-flex flex-column-fluid" id="kt_post">

@@ -4,7 +4,7 @@
     | {{__('Dashboard')}}
 @endsection
 @section('pageTitle')
- {{ __('Setting') }}
+ {{ __('Home Page Banner') }}
 @endsection
 @section('breadcrumbs')
  {{ __('Listing') }}

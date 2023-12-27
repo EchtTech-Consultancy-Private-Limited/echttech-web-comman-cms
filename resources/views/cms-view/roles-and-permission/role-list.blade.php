@@ -7,7 +7,7 @@
  {{ __('Role Management') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Role List') }}
+ {{ __('Listing') }}
 @endsection
 @section('content')
 <div class="post d-flex flex-column-fluid" id="kt_post">

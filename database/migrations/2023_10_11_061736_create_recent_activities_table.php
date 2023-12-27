@@ -15,8 +15,11 @@ return new class extends Migration
     {
         Schema::create('recent_activities', function (Blueprint $table) {
             $table->uuid('uid')->primary();
-            $table->string('recent_activities_en')->nullable();
-            $table->string('recent_activities_hi')->nullable();
+            $table->string('recent_activities_en',355)->nullable();
+            $table->string('recent_activities_hi',355)->nullable();
+            $table->longtext('description_en',355)->nullable();
+            $table->longtext('description_hi',355)->nullable();
+            $table->string('link',355)->nullable();
             $table->string('public_url')->nullable();
             $table->longtext('private_url')->nullable();
             $table->longtext('start_date')->nullable();
@@ -24,6 +27,7 @@ return new class extends Migration
             $table->string('pdfimage_size')->nullable();
             $table->string('file_extension')->nullable();
             $table->boolean('tab_type')->comment("0:Internal, 1:External")->default(0);
+            $table->boolean('notification_others')->comment("1:Notification, 2:others")->default(0);
             $table->boolean('publice_status')->comment("0:Inactive, 1:Active")->default(0);
             $table->boolean('status')->comment("1:Active/Approve, 0:Inactive/Stope,2:Ready For Publisher,3:Published")->default(1);
             $table->boolean('short_order')->nullable();

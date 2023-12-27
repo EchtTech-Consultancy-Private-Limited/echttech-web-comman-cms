@@ -4,10 +4,10 @@
     | {{__('Dashboard')}}
 @endsection
 @section('pageTitle')
- {{ __('Setting') }}
+ {{ __('Content Page') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Content Page Add') }}
+ {{ __('Content Add') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/content-page-add.js') }}"></script>

@@ -7,7 +7,7 @@
  {{ __('Permissions') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Permissions List') }}
+ {{ __('List') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/permission_list_datatable.js') }}"></script>

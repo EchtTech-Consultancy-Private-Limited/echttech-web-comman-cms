@@ -6,7 +6,7 @@
  {{ __('Event Management') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Event Create') }}
+ {{ __('Create') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/event-add.js') }}"></script>

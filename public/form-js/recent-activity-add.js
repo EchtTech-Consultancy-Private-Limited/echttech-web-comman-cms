@@ -48,6 +48,7 @@ var KTAppRecentActivitySave = function () {
                  formData.append("kt_description_en", $('#kt_summernote_en').summernote('code'));
                  formData.append("kt_description_hi", $('#kt_summernote_hi').summernote('code'));
                  formData.append("tabtype", $("input[type='radio'][name='tabtype']:checked").val());
+                 formData.append("notification_others", $("input[type='radio'][name='notification_others']:checked").val());
                axios.post(crudUrlTemplate.create,
                            formData, {
                   }).then(function (response) {

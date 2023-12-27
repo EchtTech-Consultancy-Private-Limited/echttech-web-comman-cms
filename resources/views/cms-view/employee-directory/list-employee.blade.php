@@ -4,10 +4,10 @@
     | {{__('Employee Directory')}}
 @endsection
 @section('pageTitle')
- {{ __('Setting') }}
+ {{ __('Employee Directory') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Employee Directory Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/employee-directory-datatable-list.js') }}"></script>

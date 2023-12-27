@@ -4,7 +4,7 @@
     | {{__('Website Core Setting')}}
 @endsection
 @section('pageTitle')
- {{ __('Setting') }}
+ {{ __('Website Core Setting') }}
 @endsection
 @section('breadcrumbs')
  {{ __('Listing') }}

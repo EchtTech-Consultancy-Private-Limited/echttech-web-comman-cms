@@ -4,7 +4,7 @@
 | {{__('Department & Designation')}}
 @endsection
 @section('pageTitle')
-{{ __('Setting') }}
+{{ __('Department & Designation') }}
 @endsection
 @section('breadcrumbs')
 {{ __('Edit') }}

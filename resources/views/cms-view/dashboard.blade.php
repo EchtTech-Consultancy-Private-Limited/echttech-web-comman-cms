@@ -7,7 +7,7 @@
  {{ __('Dashboard Management') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Dashboard List') }}
+ {{ __('Dashboard') }}
 @endsection
 @section('content')
 <div class="post d-flex flex-column-fluid" id="kt_post">

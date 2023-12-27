@@ -4,7 +4,7 @@
     | {{__('Recent Activity')}}
 @endsection
 @section('pageTitle')
- {{ __('Setting') }}
+ {{ __('Recent Activity') }}
 @endsection
 @section('breadcrumbs')
  {{ __('Listing') }}
