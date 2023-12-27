@@ -23,7 +23,7 @@
             <thead>
                 <tr role="row">
                     <th class="sorting" tabindex="0" aria-controls="kt_datatable_menu" rowspan="1" colspan="1">{{__('ID')}}</th>
-                    <th class="sorting" tabindex="0" aria-controls="kt_datatable_menu" rowspan="1" colspan="1">{{__('Menu Name')}}</th>
+                    <th class="sorting" tabindex="0" aria-controls="kt_datatable_menu" rowspan="1" colspan="1">{{__('Main Menu')}}</th>
                     <th class="sorting" tabindex="0" aria-controls="kt_datatable_menu" rowspan="1" colspan="1">{{__('Sort Order')}}</th>
                     <th class="sorting" tabindex="0" aria-controls="kt_datatable_menu" rowspan="1" colspan="1">{{__('Status')}}</th>
                     <th class="sorting" tabindex="0" aria-controls="kt_datatable_menu" rowspan="1" colspan="1">{{__('Action')}}</th>

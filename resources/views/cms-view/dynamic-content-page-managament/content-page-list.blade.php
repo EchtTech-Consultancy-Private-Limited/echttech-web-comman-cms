@@ -1,10 +1,10 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('Menu Setting')}}
+    | {{__('Content Page')}}
 @endsection
 @section('pageTitle')
- {{ __('Menu Setting') }}
+ {{ __('Content Page') }}
 @endsection
 @section('breadcrumbs')
  {{ __('Listing') }}

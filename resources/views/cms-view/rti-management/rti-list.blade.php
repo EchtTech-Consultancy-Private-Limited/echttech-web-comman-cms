@@ -4,7 +4,7 @@
     | {{__('RTI')}}
 @endsection
 @section('pageTitle')
- {{ __('Setting') }}
+ {{ __('RTI') }}
 @endsection
 @section('breadcrumbs')
  {{ __('Listing') }}

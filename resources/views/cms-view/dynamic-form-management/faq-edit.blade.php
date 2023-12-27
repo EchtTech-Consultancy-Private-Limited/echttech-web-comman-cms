@@ -7,7 +7,7 @@
  {{ __('FAQ Setting') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Update') }}
+ {{ __('Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/faq-edit.js') }}"></script>

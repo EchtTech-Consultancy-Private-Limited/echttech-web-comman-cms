@@ -7,7 +7,7 @@
  {{ __('News Management') }}
 @endsection
 @section('breadcrumbs')
- {{ __('News List') }}
+ {{ __('Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/news_list_datatable.js') }}"></script>

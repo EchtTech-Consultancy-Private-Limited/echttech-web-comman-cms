@@ -6,7 +6,7 @@
  {{ __('RTI') }}
 @endsection
 @section('breadcrumbs')
- {{ __('RTI Create') }}
+ {{ __('Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/rti-edit.js') }}"></script>

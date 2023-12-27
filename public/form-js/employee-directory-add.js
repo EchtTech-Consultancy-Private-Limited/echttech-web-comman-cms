@@ -112,9 +112,12 @@ var KTAppEmployeeDirectorySave = function () {
                    submitButton.setAttribute('data-kt-indicator', 'on');
                    submitButton.disabled = true;
                    $('#loading').addClass('loading');
-                    $('#loading-content').addClass('loading-content');
+                  $('#loading-content').addClass('loading-content');
+                  var formData= new FormData(form);
+                  formData.append("description_e", $('#kt_summernote_en').summernote('code'));
+                  formData.append("description_h", $('#kt_summernote_hi').summernote('code'));
                 axios.post(crudUrlTemplate.create,
-                            new FormData(form), {
+                        formData, {
                    }).then(function (response) {
                    if (response.data.status ==200) {
                      $('#loading').removeClass('loading');
@@ -163,8 +166,16 @@ var KTAppEmployeeDirectorySave = function () {
                 })
              });
        }
+var demos = function () {
+   $('.summernote').summernote({
+      placeholder: 'Description...',
+      height: 200,
+      tabsize: 2
+   });
+} 
  return {
          init: function () {
+            demos();
              _officeAdd = $('#kt_EmployeeDirectory_add_form');
              _handleOfficeAddForm();
              submitButton = document.querySelector('#kt_add_EmployeeDirectory_submit');

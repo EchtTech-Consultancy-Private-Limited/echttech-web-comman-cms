@@ -7,7 +7,7 @@
  {{ __('Tenders Management') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Tenders List') }}
+ {{ __('Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/tenders_list_datatable.js') }}"></script>

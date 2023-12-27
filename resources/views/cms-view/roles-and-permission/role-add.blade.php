@@ -7,7 +7,7 @@
  {{ __('Role Management') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Role Add') }}
+ {{ __('Add') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/role-add.js') }}"></script>

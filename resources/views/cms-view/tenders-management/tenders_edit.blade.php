@@ -6,7 +6,7 @@
  {{ __('Tender Management') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Tender Create') }}
+ {{ __('Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/tenders-edit.js') }}"></script>

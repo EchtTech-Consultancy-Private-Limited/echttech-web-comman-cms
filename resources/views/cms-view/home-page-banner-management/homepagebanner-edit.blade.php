@@ -4,7 +4,7 @@
     | {{__('Home Banner Edit')}}
 @endsection
 @section('pageTitle')
- {{ __('Home Page Banner Management') }}
+ {{ __('Home Page Banner') }}
 @endsection
 @section('breadcrumbs')
  {{ __('Edit') }}

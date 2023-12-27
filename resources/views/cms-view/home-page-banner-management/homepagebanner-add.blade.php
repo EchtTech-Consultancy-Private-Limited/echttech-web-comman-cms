@@ -4,10 +4,10 @@
     | {{__('Home Banner Create')}}
 @endsection
 @section('pageTitle')
- {{ __('Home Page Banner Management') }}
+ {{ __('Home Page Banner') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Add') }}
+ {{ __('Create') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/homepagebanner-add.js') }}"></script>

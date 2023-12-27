@@ -7,7 +7,7 @@
  {{ __('User Management') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Users List') }}
+ {{ __('Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/user_list_datatable.js') }}"></script>

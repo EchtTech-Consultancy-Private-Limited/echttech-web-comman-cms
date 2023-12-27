@@ -6,7 +6,7 @@
  {{ __('News Management') }}
 @endsection
 @section('breadcrumbs')
- {{ __('News Create') }}
+ {{ __('Create') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/news-add.js') }}"></script>

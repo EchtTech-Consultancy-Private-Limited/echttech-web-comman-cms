@@ -3,10 +3,10 @@
     {{__('Home Page List')}}
 @endsection
 @section('pageTitle')
- {{ __('Home Page Banner List') }}
+ {{ __('Home Page Banner') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Home Page List') }}
+ {{ __('Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/banner_list_datatable.js') }}"></script>
