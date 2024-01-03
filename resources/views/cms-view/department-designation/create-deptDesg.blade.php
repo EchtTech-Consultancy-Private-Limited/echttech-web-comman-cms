@@ -46,11 +46,11 @@
             <form class="forms-sample row col-md-12" id="kt_department_settings_general" enctype="multipart/form-data">
                @csrf
                <!--begin::Heading-->
-               <div class="row mb-7">
+               <!-- <div class="row mb-7">
                   <div class="col-md-9 offset-md-3">
                      <h2>Department Settings</h2>
                   </div>
-               </div>
+               </div> -->
                <div id="co"></div>
                <!--end::Heading-->
                <!--begin::Input group-->
@@ -97,11 +97,11 @@
             <form class="forms-sample row col-md-12" id="kt_designation_content_settings" enctype="multipart/form-data">
                @csrf
                <!--begin::Heading-->
-               <div class="row mb-7">
+               <!-- <div class="row mb-7">
                   <div class="col-md-9 offset-md-3">
                      <h2>Designation Settings</h2>
                   </div>
-               </div>
+               </div> -->
                <div id="co"></div>
                <!--end::Heading-->
                <!--begin::Input group-->
