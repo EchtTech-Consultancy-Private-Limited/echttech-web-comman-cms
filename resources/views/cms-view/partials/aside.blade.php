@@ -13,7 +13,7 @@
       <div class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500" id="#kt_aside_menu" data-kt-menu="true">
          <div  class="menu-item here show menu-accordion" >
             <span class="menu-link" >
-               <span  class="menu-icon" ><i class="ki-outline ki-home fs-2"></i></span>
+               <span  class="menu-icon" ><i class="ki-outline ki-element-11 fs-2"></i></span>
                <span  class="menu-title" style="transform: rotateZ(0deg);">
             <a href="{{ route('dashboard') }}">{{ config('menu.dashboard') }}</a></span>
             <span  class="menu-arrow" style="transform: rotate(90deg) !important;"></span></span><!--end:Menu link--><!--begin:Menu sub-->
