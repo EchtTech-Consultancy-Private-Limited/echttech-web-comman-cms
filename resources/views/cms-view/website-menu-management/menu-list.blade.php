@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('Menu Setting')}}
+    | {{__('Menu')}}
 @endsection
 @section('pageTitle')
- {{ __('Menu Setting') }}
+ {{ __('Menu') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Menu Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/menu_list_datatable.js') }}"></script>

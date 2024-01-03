@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
-    @parent
-    | {{__('Dashboard')}}
+@parent
+    | {{__('Content Create')}}
 @endsection
 @section('pageTitle')
- {{ __('Content Page') }}
+ {{ __('Content Create') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Content Add') }}
+ {{ __('Content Create') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/content-page-add.js') }}"></script>

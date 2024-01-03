@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('Feed Back Setting')}}
+    | {{__('Feed Back')}}
 @endsection
 @section('pageTitle')
- {{ __('Feed Back Setting') }}
+ {{ __('Feed Back') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Feed Back Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/feed_back_datatable.js') }}"></script>

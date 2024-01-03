@@ -7,7 +7,7 @@
 {{ __('Department & Designation') }}
 @endsection
 @section('breadcrumbs')
-{{ __('Edit') }}
+{{ __('Department & Designation Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/department-designation-page-edit.js') }}"></script>

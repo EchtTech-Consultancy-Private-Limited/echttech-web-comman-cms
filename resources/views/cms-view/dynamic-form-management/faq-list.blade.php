@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('FAQ Setting')}}
+    | {{__('FAQ')}}
 @endsection
 @section('pageTitle')
- {{ __('FAQ Setting') }}
+ {{ __('FAQ') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('FAQ Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/faq_list_datatable.js') }}"></script>

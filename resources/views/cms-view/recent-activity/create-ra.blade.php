@@ -1,12 +1,12 @@
 @extends('cms-view.layouts.main')
 @section('title')
-    {{__('Recent Activity Create')}}
+    {{__('Recent Activity')}}
 @endsection
 @section('pageTitle')
  {{ __('Recent Activity') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Create') }}
+ {{ __('Recent Activity Create') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/recent-activity-add.js') }}"></script>

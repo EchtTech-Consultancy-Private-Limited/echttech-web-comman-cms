@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
 @parent
-| {{__('User Setting')}}
+| {{__('User')}}
 @endsection
 @section('pageTitle')
-{{ __('User Setting') }}
+{{ __('User') }}
 @endsection
 @section('breadcrumbs')
-{{ __('Edit') }}
+{{ __('User Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/user-edit.js') }}"></script>

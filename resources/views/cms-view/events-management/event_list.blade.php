@@ -7,7 +7,7 @@
  {{ __('Event') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Event Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/event_list_datatable.js') }}"></script>

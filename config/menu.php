@@ -1,7 +1,7 @@
 <?php 
 
 return[
-        'dashboard' => 'Dashboards',
+        'dashboard' => 'Dashboard',
         'usermanagement' => 'User Management',
         'permissions' => 'Permissions',
         'employeedirectory' => 'Employee Directory',

@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
 @parent
-| {{__('Website Menu Setting')}}
+| {{__('Menu')}}
 @endsection
 @section('pageTitle')
-{{ __('Menu Setting') }}
+{{ __('Menu') }}
 @endsection
 @section('breadcrumbs')
-{{ __('Edit') }}
+{{ __('Menu Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/menu-edit.js') }}"></script>

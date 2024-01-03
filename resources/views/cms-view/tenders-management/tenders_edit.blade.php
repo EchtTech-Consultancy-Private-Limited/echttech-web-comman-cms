@@ -1,12 +1,12 @@
 @extends('cms-view.layouts.main')
 @section('title')
-    {{__('Tender Create')}}
+    {{__('Tender')}}
 @endsection
 @section('pageTitle')
- {{ __('Tender Management') }}
+ {{ __('Tender') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Edit') }}
+ {{ __('Tender Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/tenders-edit.js') }}"></script>

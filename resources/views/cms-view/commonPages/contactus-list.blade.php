@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('Contact US Setting')}}
+    | {{__('Contact US')}}
 @endsection
 @section('pageTitle')
- {{ __('Contact US Setting') }}
+ {{ __('Contact US') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Contact US Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/contact_us_datatable.js') }}"></script>

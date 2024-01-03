@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('Module Setting')}}
+    | {{__('Module')}}
 @endsection
 @section('pageTitle')
- {{ __('Module Setting') }}
+ {{ __('Module') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Module Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/module_list_datatable.js') }}"></script>

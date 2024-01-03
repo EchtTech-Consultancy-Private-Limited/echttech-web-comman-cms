@@ -1,6 +1,6 @@
 <div class="modal fade" id="kt_modal_add_user" tabindex="-1" aria-hidden="true">
    <!--begin::Modal dialog-->
-   <div class="modal-dialog modal-dialog-centered mw-650px">
+   <div class="modal-dialog modal-dialog-centered mw-850px">
       <!--begin::Modal content-->
       <div class="modal-content">
          <!--begin::Modal header-->
@@ -68,19 +68,19 @@
                   </div>
                   <!--end::Input group-->
                   <!--begin::Input group-->
-                  <div class="fv-row mb-7">
+                  <div class="fv-row mb-7 px-2">
                      <!--begin::Label-->
                      <label class="required fw-semibold fs-6 mb-2">Full Name</label>
                      <!--end::Label-->
                      <!--begin::Input-->
-                     <div class="col-md-12">
+                     <div class="col-md-12 ">
                         <input type="text" name="user_name" class="form-control form-control-solid mb-3 mb-lg-0 user_name" id="user_name" placeholder="Full name" value="" />
                      </div>
                      <!--end::Input-->
                   </div>
                   <!--end::Input group-->
                   <!--begin::Input group-->
-                  <div class="fv-row mb-7">
+                  <div class="fv-row mb-7 px-2">
                      <!--begin::Label-->
                      <label class="required fw-semibold fs-6 mb-2">Email</label>
                      <!--end::Label-->
@@ -90,7 +90,7 @@
                      </div>
                      <!--end::Input-->
                   </div>
-                  <div class="fv-row mb-7">
+                  <div class="fv-row mb-7 px-2">
                      <!--begin::Label-->
                      <label class="required fw-semibold fs-6 mb-2">Password</label>
                      <!--end::Label-->
@@ -137,11 +137,11 @@
                <!--begin::Actions-->
                <div class="text-center pt-15">
                   <button type="reset" class="btn btn-light me-3" data-kt-users-modal-action="cancel">
-                  Discard
+                  Cancel
                   </button>
                   <button type="submit" id="kt_add_user_submit" class="btn btn-primary submit-user-btn" data-kt-users-modal-action="submit">
                   <span class="indicator-label">
-                  Submit
+                  Save
                   </span>
                   <span class="indicator-progress">
                   Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>

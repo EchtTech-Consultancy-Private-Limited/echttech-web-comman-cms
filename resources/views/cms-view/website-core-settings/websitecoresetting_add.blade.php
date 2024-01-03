@@ -7,7 +7,7 @@
 {{ __('Website Core Setting') }}
 @endsection
 @section('breadcrumbs')
-{{ __('Add') }}
+{{ __('Website Core Setting Create') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/websitecoresetting-add.js') }}"></script>

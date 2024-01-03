@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('Users List')}}
+    | {{__('Users')}}
 @endsection
 @section('pageTitle')
- {{ __('User Management') }}
+ {{ __('Users') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Users Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/user_list_datatable.js') }}"></script>

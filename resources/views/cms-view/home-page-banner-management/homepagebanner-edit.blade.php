@@ -7,7 +7,7 @@
  {{ __('Home Page Banner') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Edit') }}
+ {{ __('Home Page Banner Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/homepagebanner-edit.js') }}"></script>
