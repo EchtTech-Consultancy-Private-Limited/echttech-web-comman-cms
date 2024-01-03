@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-     {{__('Gallery Setting')}}
+     {{__('Gallery')}}
 @endsection
 @section('pageTitle')
- {{ __('Gallery Setting') }}
+ {{ __('Gallery') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Add') }}
+ {{ __('Gallery Create') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/gallery-management-add.js') }}"></script>

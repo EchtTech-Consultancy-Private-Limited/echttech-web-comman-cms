@@ -7,7 +7,7 @@
  {{ __('Home Page Banner') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Home Page Banner Listing') }}
 @endsection
 @section('content')
 <div class="card card-flush">

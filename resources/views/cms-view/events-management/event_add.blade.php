@@ -3,10 +3,10 @@
     {{__('Event Create')}}
 @endsection
 @section('pageTitle')
- {{ __('Event Management') }}
+ {{ __('Event') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Create') }}
+ {{ __('Event Create') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/event-add.js') }}"></script>

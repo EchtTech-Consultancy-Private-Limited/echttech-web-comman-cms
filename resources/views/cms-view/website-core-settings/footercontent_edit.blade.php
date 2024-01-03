@@ -7,7 +7,7 @@
 {{ __('Website Core Setting') }}
 @endsection
 @section('breadcrumbs')
-{{ __('Edit') }}
+{{ __('Website Core Setting Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/websiteFooterContent-edit.js') }}"></script>

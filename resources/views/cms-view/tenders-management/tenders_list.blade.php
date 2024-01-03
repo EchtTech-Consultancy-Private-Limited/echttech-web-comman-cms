@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('Tenders List')}}
+    | {{__('Tenders')}}
 @endsection
 @section('pageTitle')
- {{ __('Tenders Management') }}
+ {{ __('Tenders') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Tender Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/tenders_list_datatable.js') }}"></script>

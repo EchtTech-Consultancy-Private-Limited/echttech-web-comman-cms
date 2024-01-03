@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('Role List')}}
+    | {{__('Role')}}
 @endsection
 @section('pageTitle')
- {{ __('Role Management') }}
+ {{ __('Role') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Role Listing') }}
 @endsection
 @section('content')
 <div class="post d-flex flex-column-fluid" id="kt_post">

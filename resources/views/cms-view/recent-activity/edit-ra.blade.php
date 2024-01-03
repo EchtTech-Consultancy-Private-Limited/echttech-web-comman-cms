@@ -6,7 +6,7 @@
  {{ __('Recent Activity') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Edit') }}
+ {{ __('Recent Activity Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/recent-activity-edit.js') }}"></script>

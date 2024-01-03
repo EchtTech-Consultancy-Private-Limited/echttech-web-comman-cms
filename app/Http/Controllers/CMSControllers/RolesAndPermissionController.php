@@ -30,9 +30,12 @@ class RolesAndPermissionController extends Controller
             $crudUrlTemplate['delete'] = route('news-delete', ['id' => 'xxxx']);
         }
         //$crudUrlTemplate['view'] = route('websitecoresetting.websitecoresetting-list');
-
+        $data=DB::table('roles_and_permissions')->where('soft_delete','0')->get();
+        
+        //dd($data);
         return view('cms-view.roles-and-permission.permission_list',
-            ['crudUrlTemplate' =>  json_encode($crudUrlTemplate)
+            ['crudUrlTemplate' =>  json_encode($crudUrlTemplate),
+            'list' => $data
         
         ]);
     }

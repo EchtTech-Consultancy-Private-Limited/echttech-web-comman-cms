@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
 @parent
-| {{__('Module Setting')}}
+| {{__('Module')}}
 @endsection
 @section('pageTitle')
-{{ __('Module Setting') }}
+{{ __('Module') }}
 @endsection
 @section('breadcrumbs')
-{{ __('Edit') }}
+{{ __('Module Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/module-edit.js') }}"></script>

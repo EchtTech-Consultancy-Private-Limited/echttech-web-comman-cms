@@ -7,7 +7,7 @@
  {{ __('RTI') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('RTI Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/rti-datatable-list.js') }}"></script>

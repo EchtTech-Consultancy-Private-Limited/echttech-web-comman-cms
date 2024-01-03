@@ -4,10 +4,10 @@
     | {{__('Developer')}}
 @endsection
 @section('pageTitle')
- {{ __('Developer Management') }}
+ {{ __('Developer') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Developer Listing') }}
 @endsection
 @section('content')
 <div class="post d-flex flex-column-fluid" id="kt_post">

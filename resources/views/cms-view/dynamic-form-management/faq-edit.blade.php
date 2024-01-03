@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
-    @parent
-    | {{__('FAQ Setting')}}
+@parent
+    | {{__('FAQ')}}
 @endsection
 @section('pageTitle')
- {{ __('FAQ Setting') }}
+ {{ __('FAQ') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Edit') }}
+ {{ __('FAQ Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/faq-edit.js') }}"></script>

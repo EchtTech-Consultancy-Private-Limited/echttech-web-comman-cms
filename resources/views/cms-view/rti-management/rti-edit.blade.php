@@ -1,12 +1,12 @@
 @extends('cms-view.layouts.main')
 @section('title')
-    {{__('RTI Create')}}
+    {{__('RTI')}}
 @endsection
 @section('pageTitle')
  {{ __('RTI') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Edit') }}
+ {{ __('RTI Edit') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/rti-edit.js') }}"></script>

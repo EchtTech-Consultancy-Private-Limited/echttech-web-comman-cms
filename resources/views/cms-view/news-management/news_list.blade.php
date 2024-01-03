@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('News List')}}
+    | {{__('News')}}
 @endsection
 @section('pageTitle')
- {{ __('News Management') }}
+ {{ __('News') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('News Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/news_list_datatable.js') }}"></script>

@@ -1,12 +1,12 @@
 @extends('cms-view.layouts.main')
 @section('title')
-    {{__('News Create')}}
+    {{__('News')}}
 @endsection
 @section('pageTitle')
- {{ __('News Management') }}
+ {{ __('News') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Create') }}
+ {{ __('News Create') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/form-js/news-add.js') }}"></script>

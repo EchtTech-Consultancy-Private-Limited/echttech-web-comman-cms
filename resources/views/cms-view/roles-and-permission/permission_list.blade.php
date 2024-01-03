@@ -19,16 +19,28 @@
 <div class="card card-flush">
     <div class="card-body">
         <!--start: Datatable -->
-        <table class="table table-separate table-head-custom table-checkable dataTable no-footer dtr-inline collapsed" id="kt_datatable_permission" role="grid" aria-describedby="kt_datatable_info" style="width: 924px;">
+        <!--begin::Table-->
+        <table class="table align-middle table-row-dashed fs-6 gy-5 mb-0" id="kt_permissions_table">
             <thead>
-                <tr role="row">
-                    <th class="sorting" tabindex="0" aria-controls="kt_datatable_permission" rowspan="1" colspan="1">{{__('Name')}}</th>
-                    <th class="sorting" tabindex="0" aria-controls="kt_datatable_permission" rowspan="1" colspan="1">{{__('ASSIGNED TO')}}</th>
-                    <th class="sorting" tabindex="0" aria-controls="kt_datatable_permission" rowspan="1" colspan="1">{{__('CREATED DATE')}}</th>
-                    <th class="sorting" tabindex="0" aria-controls="kt_datatable_permission" rowspan="1" colspan="1">{{__('Action')}}</th>
+                <tr class="text-start text-gray-400 fw-bold fs-7 text-uppercase gs-0">
+                    <th class="min-w-125px">Name</th>
+                    <th class="min-w-250px">Assigned to</th>
+                    <th class="min-w-125px">Created Date</th>
                 </tr>
             </thead>
-        </table>
+            <tbody class="fw-semibold text-gray-600">
+                <tr>
+                    <td>User Management</td>
+                    <td>
+                        <a href="roles/view.html" class="badge badge-light-primary fs-7 m-1">Administrator</a>
+                    </td>
+                    <td>
+                        10 Mar 2023, 2:40 pm                        
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        <!--end::Table-->
         <!--end: Datatable -->
     </div>
 </div>

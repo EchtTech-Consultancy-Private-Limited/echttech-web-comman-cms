@@ -6,7 +6,7 @@
  {{ __('Home Page Banner') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Listing') }}
+ {{ __('Home Page Banner Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/banner_list_datatable.js') }}"></script>
