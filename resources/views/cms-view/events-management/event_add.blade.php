@@ -293,7 +293,7 @@
             <!--begin::Button-->
             <button type="submit" id="kt_add_event_submit" class="btn btn-primary submit-event-btn">
             <span class="indicator-label">
-               Save Changes
+               Save
             </span>
             <span class="indicator-progress">
                Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>

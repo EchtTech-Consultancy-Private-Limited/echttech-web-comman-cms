@@ -97,7 +97,7 @@
                               <div class="form-group">
                                  <label class="required form-label mw-100 w-200px">Image Title</label>
                                  <label class="required form-label mw-100 w-200px" style="margin-left: 12px;">Start Date</label>
-                                 <label class="required form-label mw-100 w-200px" style="margin-left: 12px;">End Start</label>
+                                 <label class="required form-label mw-100 w-200px" style="margin-left: 12px;">End Date</label>
                                  <label class="required form-label mw-100 w-200px">Image Format</label>
                                  <div data-repeater-list="kt_photo_add_multiple_options" class="d-flex flex-column gap-3">
                                     <div data-repeater-item class="form-group d-flex flex-wrap align-items-center gap-5">
@@ -144,7 +144,7 @@
                     <!--begin::Button-->
                     <button type="submit" id="kt_add_photo_submit" class="btn btn-primary submit-photo-btn">
                     <span class="indicator-label">
-                    Save Changes
+                    Save
                     </span>
                     <span class="indicator-progress">
                     Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
@@ -214,7 +214,7 @@
                               <div class="form-group">
                                  <label class="required form-label mw-100 w-200px">Video Title</label>
                                  <label class="required form-label mw-100 w-200px" style="margin-left: 12px;">Start Date</label>
-                                 <label class="required form-label mw-100 w-200px" style="margin-left: 12px;">End Start</label>
+                                 <label class="required form-label mw-100 w-200px" style="margin-left: 12px;">End Date</label>
                                  <label class="required form-label mw-100 w-200px" style="margin-left: 12px;">Video Link</label>
                                  <div data-repeater-list="kt_video_add_multiple_options" class="d-flex flex-column gap-3">
                                     <div data-repeater-item class="form-group d-flex flex-wrap align-items-center gap-5">
@@ -261,7 +261,7 @@
                     <!--begin::Button-->
                     <button type="submit" id="kt_add_video_submit" class="btn btn-primary submit-video-btn">
                     <span class="indicator-label">
-                    Save Changes
+                    Save
                     </span>
                     <span class="indicator-progress">
                     Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
