@@ -53,11 +53,11 @@
             <!--begin::Form-->
             <form id="kt_settings_menu_form" class="form" method="post">
                @csrf
-               <div class="row mb-7">
+               <!-- <div class="row mb-7">
                   <div class="col-md-9 offset-md-3">
                      <h2>Create Menu</h2>
                   </div>
-               </div>
+               </div> -->
                <div class="row fv-row mb-7">
                   <div class="col-md-3 text-md-end">
                      <label class="fs-6 fw-semibold form-label mt-3">
@@ -203,9 +203,9 @@
                <div class="row py-5">
                   <div class="col-md-9 offset-md-3">
                      <div class="d-flex">
-                        <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">Cancel</button>
+                        <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">{{config('FormField.cancel_button')}}</button>
                         <button type="submit" data-kt-settings-type="submit" id="kt_menu_submit" class="btn btn-primary submit-add-menu-btn">
-                        <span class="indicator-label">Save</span>
+                        <span class="indicator-label">{{config('FormField.save_button')}}</span>
                         <span class="indicator-progress">
                            Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
                         </span>
@@ -221,11 +221,11 @@
             <!--begin::Form-->
             <form  id="kt_settings_menu_form2" method="post" class="form">
                @csrf
-               <div class="row mb-7">
+               <!-- <div class="row mb-7">
                   <div class="col-md-9 offset-md-3">
                      <h2>Create Sub Menu</h2>
                   </div>
-               </div>
+               </div> -->
                <div class="row fv-row mb-7">
                   <div class="col-md-3 text-md-end">
                      <label class="fs-6 fw-semibold form-label mt-3"><span>Menu Name</span>
@@ -319,9 +319,9 @@
                <div class="row py-5">
                   <div class="col-md-9 offset-md-3">
                      <div class="d-flex">
-                     <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">Cancel</button>
+                     <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">{{config('FormField.cancel_button')}}</button>
                         <button type="submit" data-kt-settings-type="submit" id="kt_menu_submit2" class="btn btn-primary submit-add-menu-btn2">
-                        <span class="indicator-label">Save</span>
+                        <span class="indicator-label">{{config('FormField.save_button')}}</span>
                         <span class="indicator-progress">
                            Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
                         </span>
@@ -341,11 +341,11 @@
             <form id="kt_settings_menu_form3" method="post" class="form">
                @csrf
                <!--begin::Heading-->
-               <div class="row mb-7">
+               <!-- <div class="row mb-7">
                   <div class="col-md-9 offset-md-3">
                      <h2>Create Sub Sub Menu</h2>
                   </div>
-               </div>
+               </div> -->
                <div class="row fv-row mb-7">
                   <div class="col-md-3 text-md-end">
                      <!--begin::Label-->
@@ -441,9 +441,9 @@
                <div class="row py-5">
                   <div class="col-md-9 offset-md-3">
                      <div class="d-flex">
-                     <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">Cancel</button>
+                     <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">{{config('FormField.cancel_button')}}</button>
                         <button type="submit" data-kt-settings-type="submit" id="kt_menu_submit3" class="btn btn-primary submit-add-menu-btn3">
-                        <span class="indicator-label">Save</span>
+                        <span class="indicator-label">{{config('FormField.save_button')}}</span>
                         <span class="indicator-progress">
                            Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
                         </span>
@@ -463,11 +463,11 @@
             <form id="kt_settings_menu_form4" method="post" class="form">
                @csrf
                <!--begin::Heading-->
-               <div class="row mb-7">
+               <!-- <div class="row mb-7">
                   <div class="col-md-9 offset-md-3">
                      <h2>Create Sub Sub Sub Menu</h2>
                   </div>
-               </div>
+               </div> -->
                <div class="row fv-row mb-7">
                   <div class="col-md-3 text-md-end">
                      <!--begin::Label-->
@@ -563,9 +563,9 @@
                <div class="row py-5">
                   <div class="col-md-9 offset-md-3">
                      <div class="d-flex">
-                     <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">Cancel</button>
+                     <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">{{config('FormField.cancel_button')}}</button>
                         <button type="submit" data-kt-settings-type="submit" id="kt_menu_submit4" class="btn btn-primary submit-add-menu-btn4">
-                        <span class="indicator-label">Save</span>
+                        <span class="indicator-label">{{config('FormField.save_button')}}</span>
                         <span class="indicator-progress">
                            Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
                         </span>

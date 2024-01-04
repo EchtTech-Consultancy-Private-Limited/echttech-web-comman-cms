@@ -214,13 +214,13 @@
             <div class="d-flex justify-content-end">
                <!--begin::Button-->
                <a id="kt_ecommerce_add_product_cancel" class="btn btn-light me-5">
-               Cancel
+               {{config('FormField.cancel_button')}}
                </a>
                <!--end::Button-->
                <!--begin::Button-->
                <button type="submit" id="kt_edit_recentActivity_submit" class="btn btn-primary submit-recentActivityEdit-btn">
                <span class="indicator-label">
-               Save Changes
+               {{config('FormField.save_button')}}
                </span>
                <span class="indicator-progress">
                Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
