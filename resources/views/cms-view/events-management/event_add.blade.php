@@ -171,7 +171,7 @@
                            <!--end::Label-->
                            <!--begin::Input-->
                            <div class="col-md-12">
-                              <input type="text" name="title_name_en" id="title_name_en" class="form-control mb-2 title_name_en" id="title_name_en" placeholder="Title name" value="" />
+                              <input type="text" name="title_name_en" id="title_name_en" class="form-control mb-2 title_name_en" id="title_name_en" placeholder="{{config('FormField.placeholder_title_en')}}" value="" />
                            </div>
                            <!--end::Input-->
                            <!--begin::Description-->
@@ -186,7 +186,7 @@
                            <!--end::Label-->
                            <!--begin::Input-->
                            <div class="col-md-12">
-                              <input type="text" name="title_name_hi" id="title_name_hi" class="form-control mb-2 title_name_hi" placeholder="Title name" value="" />
+                              <input type="text" name="title_name_hi" id="title_name_hi" class="form-control mb-2 title_name_hi" placeholder="{{config('FormField.placeholder_title_hi')}}" value="" />
                            </div>
                            <!--end::Input-->
                            <!--begin::Description-->

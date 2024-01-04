@@ -7,7 +7,7 @@
  {{ __('Website Core Setting') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Website Core Setting Listing') }}
+ {{ __('Website Core Setting Logo Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/header_logo_list_datatable.js') }}"></script>

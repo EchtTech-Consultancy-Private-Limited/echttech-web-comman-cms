@@ -94,7 +94,7 @@
                                  <!--end::Label-->
                               <!--begin::Input-->
                               <div class="col-md-12">
-                                 <input type="text" name="title_name_en" class="form-control mb-2 title_name_en" id="title_name_en" placeholder="Title name" value="{{ $data->title_name_en  }}" />
+                                 <input type="text" name="title_name_en" class="form-control mb-2 title_name_en" id="title_name_en" placeholder="{{config('FormField.placeholder_title_en')}}" value="{{ $data->title_name_en  }}" />
                               </div>
                               <!--end::Input-->
                               <!--begin::Description-->
@@ -106,7 +106,7 @@
                               <label class="required form-label">शीर्षक नाम (हिन्दी में)</label>
                               <!--end::Label-->
                               <!--begin::Input-->
-                              <input type="text" name="title_name_hi" class="form-control mb-2 title_name_hi" id="title_name_hi" placeholder="Title name" value="{{ $data->title_name_hi }}" />
+                              <input type="text" name="title_name_hi" class="form-control mb-2 title_name_hi" id="title_name_hi" placeholder="{{config('FormField.placeholder_title_hi')}}" value="{{ $data->title_name_hi }}" />
                               <!--end::Input-->
                               <!--begin::Description-->
                               <div class="text-muted fs-7">A title name is required and recommended to be unique.</div>
@@ -166,7 +166,7 @@
                                     <label class="required form-label mw-100 w-175px">Pdf Title</label>
                                     <!-- <label class="required form-label mw-100 w-175px" style="margin-left: 12px;">Tender Description</label> -->
                                     <label class="required form-label mw-100 w-175px" style="margin-left: 12px;">Start Date</label>
-                                    <label class="required form-label mw-100 w-175px" style="margin-left: 12px;">End Start</label>
+                                    <label class="required form-label mw-100 w-175px" style="margin-left: 12px;">End Date</label>
                                     <label class="required form-label mw-100 w-175px">PDF Format</label>
                                     <div data-repeater-list="kt_tender_add_multiple_options" class="d-flex flex-column gap-3">
                                        @if(isset($pdfData))
@@ -239,7 +239,7 @@
                <!--begin::Button-->
                <button type="submit" id="kt_update_tender_submit" class="btn btn-primary submit-tender-btn">
                <span class="indicator-label">
-               Save Changes
+               Save
                </span>
                <span class="indicator-progress">
                Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
