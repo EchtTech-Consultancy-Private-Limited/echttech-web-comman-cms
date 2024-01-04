@@ -7,7 +7,7 @@
  {{ __('Website Core Setting') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Website Core Setting Listing') }}
+ {{ __('Website Core Setting Social Link Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/social_link_list_datatable.js') }}"></script>

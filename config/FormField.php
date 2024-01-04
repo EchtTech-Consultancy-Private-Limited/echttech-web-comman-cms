@@ -1,0 +1,9 @@
+<?php 
+
+return[
+        'placeholder_description_en' => 'Description....',
+        'placeholder_description_hi' => 'विवरण....',
+        'placeholder_title_en' => 'Title Name....',
+        'placeholder_title_hi' => 'शीर्षक नाम....',
+        
+];

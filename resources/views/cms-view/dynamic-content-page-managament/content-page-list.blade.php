@@ -1,13 +1,13 @@
 @extends('cms-view.layouts.main')
 @section('title')
     @parent
-    | {{__('Content List')}}
+    | {{__('Page Content')}}
 @endsection
 @section('pageTitle')
  {{ __('Content Listing') }}
 @endsection
 @section('breadcrumbs')
- {{ __('Content Listing') }}
+ {{ __('Page Content Listing') }}
 @endsection
 @push('post-scripts')
 <script src="{{ asset('public/js/pagecontent_list_datatable.js') }}"></script>
