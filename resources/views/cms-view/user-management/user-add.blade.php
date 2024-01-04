@@ -137,11 +137,11 @@
                <!--begin::Actions-->
                <div class="text-center pt-15">
                   <button type="reset" class="btn btn-light me-3" data-kt-users-modal-action="cancel">
-                  Cancel
+                  {{config('FormField.cancel_button')}}
                   </button>
                   <button type="submit" id="kt_add_user_submit" class="btn btn-primary submit-user-btn" data-kt-users-modal-action="submit">
                   <span class="indicator-label">
-                  Save
+                  {{config('FormField.save_button')}}
                   </span>
                   <span class="indicator-progress">
                   Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>

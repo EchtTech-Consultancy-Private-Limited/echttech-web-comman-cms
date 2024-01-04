@@ -66,11 +66,11 @@
             <!--begin::Form-->
             <form id="kt_basic_information_form" class="form">
                <!--begin::Heading-->
-               <div class="row mb-7">
+               <!-- <div class="row mb-7">
                   <div class="col-md-9 offset-md-3">
                      <h2>Basic Information</h2>
                   </div>
-               </div>
+               </div> -->
                <!--end::Heading-->
                <!--begin::Input group-->
                <div class="row fv-row mb-7">
@@ -199,13 +199,13 @@
                      <div class="d-flex">
                         <!--begin::Button-->
                         <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">
-                        Cancel
+                        {{config('FormField.cancel_button')}}
                         </button>
                         <!--end::Button-->
                         <!--begin::Button-->
                         <button type="submit" id="kt_add_basicInformation_submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary submit-basicInfo-btn">
                         <span class="indicator-label">
-                        Save
+                        {{config('FormField.save_button')}}
                         </span>
                         <span class="indicator-progress">
                         Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
@@ -240,11 +240,11 @@
                      </div>
                      <!--begin::Input group-->
                      <!--begin::News-->
-                     <div class="card-header">
+                     <!-- <div class="card-header">
                         <div class="card-title">
                            <h2>Add Page Content</h2>
                         </div>
-                     </div>
+                     </div> -->
                      <!--end::Card header-->
                      <!--begin::Card body-->
                      <div class="card-body pt-0">
@@ -285,13 +285,13 @@
                      <div class="d-flex">
                         <!--begin::Button-->
                         <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">
-                        Cancel
+                        {{config('FormField.cancel_button')}}
                         </button>
                         <!--end::Button-->
                         <!--begin::Button-->
                         <button type="submit" id="kt_add_pagecontent_submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary submit-contentpage-btn">
                         <span class="indicator-label">
-                        Save
+                        {{config('FormField.save_button')}}
                         </span>
                         <span class="indicator-progress">
                         Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
@@ -332,11 +332,11 @@
                      <div class="card-body pt-0">
                      <!--begin::Input group-->
                      <!--begin::News-->
-                     <div class="card-header">
+                     <!-- <div class="card-header">
                         <div class="card-title">
                            <h2>Add Page Gallery</h2>
                         </div>
-                     </div>
+                     </div> -->
                      <!--end::Card header-->
                      <!--begin::Card body-->
                      <div class="card-body pt-0">
@@ -391,13 +391,13 @@
                      <div class="d-flex">
                         <!--begin::Button-->
                         <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">
-                        Cancel
+                        {{config('FormField.cancel_button')}}
                         </button>
                         <!--end::Button-->
                         <!--begin::Button-->
                         <button type="submit" id="kt_add_pagegallery_submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary submit-gallerypage-btn">
                         <span class="indicator-label">
-                        Save
+                        {{config('FormField.save_button')}}
                         </span>
                         <span class="indicator-progress">
                            Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
@@ -432,11 +432,11 @@
                      </div>
                      <!--begin::Input group-->
                      <!--begin::News-->
-                     <div class="card-header">
+                     <!-- <div class="card-header">
                         <div class="card-title">
                            <h2>Add Page PDF</h2>
                         </div>
-                     </div>
+                     </div> -->
                      <!--end::Card header-->
                      <!--begin::Card body-->
                      <div class="card-body pt-0">
@@ -491,13 +491,13 @@
                      <div class="d-flex">
                         <!--begin::Button-->
                         <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">
-                        Cancel
+                        {{config('FormField.cancel_button')}}
                         </button>
                         <!--end::Button-->
                         <!--begin::Button-->
                         <button type="submit" id="kt_add_pagepdf_submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary submit-pdfpage-btn">
                         <span class="indicator-label">
-                        Save
+                        {{config('FormField.save_button')}}
                         </span>
                         <span class="indicator-progress">
                         Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
@@ -532,11 +532,11 @@
                      </div>
                      <!--begin::Input group-->
                      <!--begin::News-->
-                     <div class="card-header">
+                     <!-- <div class="card-header">
                         <div class="card-title">
                            <h2>Add Page Banner</h2>
                         </div>
-                     </div>
+                     </div> -->
                      <!--end::Card header-->
                      <!--begin::Card body-->
                      <div class="card-body pt-0">
@@ -587,13 +587,13 @@
                      <div class="d-flex">
                         <!--begin::Button-->
                         <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">
-                        Cancel
+                        {{config('FormField.cancel_button')}}
                         </button>
                         <!--end::Button-->
                         <!--begin::Button-->
                         <button type="submit" id="kt_add_pagebanner_submit" data-kt-ecommerce-settings-type="submit" class="btn btn-primary submit-bannerpage-btn">
                         <span class="indicator-label">
-                        Save
+                        {{config('FormField.save_button')}}
                         </span>
                         <span class="indicator-progress">
                         Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>

@@ -110,11 +110,11 @@
             </div>
             <div class="text-center pt-15">
                <button type="reset" class="btn btn-light me-3" data-kt-roles-modal-action="cancel">
-               Discard
+               {{config('FormField.cancel_button')}}
                </button>
                <button type="submit" id="kt_add_role_submit" class="btn btn-primary submit-role-btn" data-kt-roles-modal-action="submit">
                <span class="indicator-label">
-               Submit
+               {{config('FormField.save_button')}}
                </span>
                <span class="indicator-progress">
                Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>

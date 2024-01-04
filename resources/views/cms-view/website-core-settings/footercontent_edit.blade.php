@@ -89,9 +89,9 @@
                   <div class="col-md-9 offset-md-3">
                      <div class="d-flex">
                         <!--begin::Button-->
-                        <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">Cancel</button>
+                        <button type="reset" data-kt-ecommerce-settings-type="cancel" class="btn btn-light me-3">{{config('FormField.cancel_button')}}</button>
                         <button type="submit" data-kt-settings-type="submit" id="kt_coreWebsiteSetting_submit2" class="btn btn-primary submit-coreWebsiteSetting-btn2">
-                        <span class="indicator-label">Save</span>
+                        <span class="indicator-label">{{config('FormField.save_button')}}</span>
                         <span class="indicator-progress">
                            Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
                         </span>
