@@ -80,6 +80,7 @@ class WebsiteMenuManagementAPIController extends Controller
                             'sort_order' => $request->sort_order,
                             'tab_type' => $request->tab_type,
                             'url' => preg_replace('/\s+/', '-', isset($request->url)?strtolower($request->url):'0'),
+                            'footer_url' => preg_replace('/\s+/', '-', isset($request->footer_url)?strtolower($request->footer_url):'0'),
                             'is_parent' => isset($request->is_parent)?$request->is_parent:'0',
                             'parent_id' => isset($request->parent_id)?$request->parent_id:'0',
                         ]);
@@ -139,6 +140,7 @@ class WebsiteMenuManagementAPIController extends Controller
      */
     public function update(Request $request)
     {
+         //dd($request->all());
         try{
             $validator=Validator::make($request->all(),
                 [
@@ -161,6 +163,7 @@ class WebsiteMenuManagementAPIController extends Controller
                         'sort_order' => $request->sort_order,
                         'tab_type' => $request->tab_type,
                         'url' => preg_replace('/\s+/', '-', isset($request->url)?strtolower($request->url):'0'),
+                        'footer_url' => preg_replace('/\s+/', '-', isset($request->footer_url)?strtolower($request->footer_url):'0'),
                         //'is_parent' => isset($request->is_parent)?$request->is_parent:'0',
                         //'parent_id' => isset($request->parent_id)?$request->parent_id:'0',
                     ]);

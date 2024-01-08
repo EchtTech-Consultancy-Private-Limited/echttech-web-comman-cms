@@ -106,6 +106,18 @@
                      <input type="number" class="form-control form-control-solid shortorder" name="shortorder" id="shortorder" value="" />
                   </div>
                </div>
+               <div class="row fv-row mb-7">
+                  <div class="col-md-3 text-md-end">
+                     <label class="fs-6 fw-semibold form-label mt-3">
+                     <span class="required">Footer URL</span>
+                     <span class="ms-1"  data-bs-toggle="tooltip" title="Set the title of the store for Listing." >
+                     <i class="ki-outline ki-information-5 text-gray-500 fs-6"></i></span>            
+                     </label>
+                  </div>
+                  <div class="col-md-7">
+                     <input type="text" class="form-control form-control-solid footer_url" name="footer_url" id="footer_url" value="" />
+                  </div>
+               </div>
                   <!-- /**** */ -->
                   <div class="fv-row mb-7 d-flex flex-wrap align-items-center text-gray-600 gap-5 mb-7">
                      <div class="col-md-3 text-md-end">
@@ -533,6 +545,7 @@
                      <input type="number" class="form-control form-control-solid shortorder3" name="shortorder" id="shortorder" value="" />
                   </div>
                </div>
+               
                <!-- /**** */ -->
                <div class="fv-row mb-7 d-flex flex-wrap align-items-center text-gray-600 gap-5 mb-7">
                      <div class="col-md-3 text-md-end">

@@ -51,11 +51,12 @@ var KTvalidationMenu1= function() {
                        menu_place: $("input[type='radio'][name='menu_place']:checked").val(),
                        sort_order: $('.shortorder').val(),
                        url: $('.url').val(),
+                       footer_url: $('.footer_url').val(),
                        tab_type: $("input[type='radio'][name='tab_type']:checked").val()
                     })
                     .then(function (response) {
 
-                    if (response) {
+                    if (response.data.status ==200) {
                         $('#loading').removeClass('loading');
                         $('#loading-content').removeClass('loading-content');
                        toastr.success(
@@ -67,7 +68,7 @@ var KTvalidationMenu1= function() {
                           if (history.scrollRestoration) {
                              history.scrollRestoration = 'manual';
                           }
-                          location.href = 'menu-list'; // reload page
+                         location.href = 'menu-list'; // reload page
                        }, 1500);
                       
                     } else {

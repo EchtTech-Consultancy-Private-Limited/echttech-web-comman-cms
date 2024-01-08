@@ -25,6 +25,7 @@ class PreventBackHistory
         $response->headers->set('Expires','Sun, 02 Jan 1990 00:00:00 GMT');
         $response->headers->set('X-Frame-Options', 'SAMEORIGIN', false);
         $response->headers->set('X-XSS-Protection', "1; mode=block");
+        $response->headers->set('Content-Security-Policy', "upgrade-insecure-requests;block-all-mixed-content");
 
         return $response;
     }

@@ -50,6 +50,7 @@ var KTvalidationMenu1= function() {
                        menu_place: $("input[type='radio'][name='menu_place']:checked").val(),
                        sort_order: $('.shortorder').val(),
                        url: $('.url').val(),
+                       footer_url: $('.footer_url').val(),
                        tab_type: $("input[type='radio'][name='tab_type']:checked").val()
                     })
                     .then(function (response) {

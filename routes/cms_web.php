@@ -160,9 +160,9 @@ Route::middleware(['auth','prevent-back-history','EnsureTokenIsValid'])->group(f
         });
     
     Route::prefix('careers')->group(function(){
-        Route::get('/careers-create', [EmpDepartDesignationController::class, 'create'])->name('careers.create');
-        Route::get('/careers-list', [EmpDepartDesignationController::class, 'index'])->name('careers.list');
-        Route::get('/careers-edit', [EmpDepartDesignationController::class, 'edit'])->name('careers.edit');
+        Route::get('/careers-create', [CareerManagementController::class, 'create'])->name('careers.create');
+        Route::get('/careers-list', [CareerManagementController::class, 'index'])->name('careers.list');
+        Route::get('/careers-edit', [CareerManagementController::class, 'edit'])->name('careers.edit');
         });
     
     Route::prefix('rtiassets')->group(function(){

@@ -88,7 +88,7 @@ var KTvalidationCoreWebsiteSetting1= function() {
                        });
                     } else {
                           toastr.error(
-                                "Sorry, looks like there are some errors detected, please try again K.", 
+                                "All Field Required, please try again", 
                                 "Something went wrong!", 
                                 {timeOut: 0, extendedTimeOut: 0, closeButton: true, closeDuration: 0}
                              );
@@ -187,7 +187,7 @@ var KTvalidationCoreWebsiteSetting2= function() {
                        });
                     } else {
                           toastr.error(
-                                "Sorry, looks like there are some errors detected, please try again K.", 
+                                "All Field Required, please try again.", 
                                 "Something went wrong!", 
                                 {timeOut: 0, extendedTimeOut: 0, closeButton: true, closeDuration: 0}
                              );
@@ -319,7 +319,7 @@ var KTvalidationCoreWebsiteSetting3= function() {
                        });
                     } else {
                           toastr.error(
-                                "Sorry, looks like there are some errors detected, please try again K.", 
+                                "All Field Required, please try again.", 
                                 "Something went wrong!", 
                                 {timeOut: 0, extendedTimeOut: 0, closeButton: true, closeDuration: 0}
                              );
@@ -440,7 +440,7 @@ var KTvalidationCoreWebsiteSetting4= function() {
                        });
                     } else {
                           toastr.error(
-                                "Sorry, looks like there are some errors detected, please try again K.", 
+                                "All Field Required, please try again.", 
                                 "Something went wrong!", 
                                 {timeOut: 0, extendedTimeOut: 0, closeButton: true, closeDuration: 0}
                              );
